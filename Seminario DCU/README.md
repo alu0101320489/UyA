@@ -21,6 +21,7 @@ El ejemplo propuesto de DCU se encuentra dividido en varios apartados:
 
     - **Conclusiones:** En este apartado explican que es el UXD, que errores cometen las organizaciones de software y la industria cubana.
 
+La fase del diseño del documento de ejemplo se encuentra en Evaluación ya que terminaron el prototipo y comenzaron con las evaluaciones, los test de usuarios para observar cómo interactúan con el prototipo.
 
 
 ## Aplicar el DCU para la realización de un prototipo de una aplicación web para la gestión y optimización del tiempo de estudio de un estudiante del Grado en Ingeniería Informática de la ULL
