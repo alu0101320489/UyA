@@ -1,6 +1,9 @@
 # Seminario DCU
 ## Autores
 - Marco Antonio Cabrera Hernández
+- Daniel Hernández Fajardo
+- Pablo Fernández Herrera
+- Cristopher Alexandro Median Pechiutta
 
 ## Indica en el documento del ejemplo de aplicación del DCU, qué actividades se corresponden con el diagrama de Métodos DCU y en qué fase del diseño se ubica
 El ejemplo propuesto de DCU se encuentra dividido en varios apartados:
