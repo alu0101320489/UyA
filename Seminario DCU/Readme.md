@@ -17,5 +17,4 @@ El ejemplo propuesto de DCU se encuentra dividido en varios apartados:
     - **Card sorting, Tarea de modelado y Prototipado Digital:** como bien indican sus nombres, incluyen en el apartado Prototipado. En el primer apartado habla de la propia técnica del card sorting, organización de los contenidos, mientras que en los dos últimos habla del prototipado en papel y en digital.  
 
     - **Conclusiones:** En este apartado explican que es el UXD, que errores cometen las organizaciones de software y la industria cubana.
-
 ## Aplicar el DCU para la realización de un prototipo de una aplicación web para la gestión y optimización del tiempo de estudio de un estudiante del Grado en Ingeniería Informática de la ULL.
