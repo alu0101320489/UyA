@@ -23,4 +23,4 @@ El ejemplo propuesto de DCU se encuentra dividido en varios apartados:
 
 
 
-## Aplicar el DCU para la realización de un prototipo de una aplicación web para la gestión y optimización del tiempo de estudio de un estudiante del Grado en Ingeniería Informática de la ULL.
+## Aplicar el DCU para la realización de un prototipo de una aplicación web para la gestión y optimización del tiempo de estudio de un estudiante del Grado en Ingeniería Informática de la ULL
