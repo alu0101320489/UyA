@@ -1,22 +1,41 @@
 <html>
+  <head>
+    <title>Electronica S.L. Log in</title>
+  </head>
     <body>
-      <head>
-        <title>Inicio de sesión</title>
-      </head>
-        <div id="div7">
-          <h1>Inicio de sesión</h1>
+      <span id="top"></span>
+      <header>
+        <img src="../assets/logo.jpg" alt="logo">
+        <h1>Electrónica S.L.</h1>
+        <ul id="nav-bar">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="formulario.html">Inicio de Sesión</a></li>
+          <li><a href="promociones.html">Promociones</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="contacto.html">Contacto</a></li>    
+          <li><a href="encuesta.html">Encuesta de satisfaccion</a></li>  
+        </ul>
+      </header>
+
+      <form method="post"> 
+        <fieldset> 
+        <legend>Log in</legend>
+        <div>
+        <label for="correo electronico">Correo electronico:</label> <br/>
+        <input type="email" name="correo electronico" value="" placeholder="Ej:Nombre@gmail.com" required /><br/>
+        <label for="constraseña">Contraseña:</label><br/>
+        <input type="text" name="constraseña" value="" placeholder="" required/><br/>
         </div>
-        <div id="div8">
-            <form action="">
-              <h2>Nombre:</h2>
-              <input type="text" value="Pepe"><br>
-              <h2>Apellido:</h2>
-              <input type="text" value="García"><br>
-              <h2>Correo electrónico:</h2>
-              <input type="text" value=""><br><br>
-              <input type="submit" value="Enviar">
-            </form> 
-          </div>
-          <a href="../index.html">Inicio</a>
+        </fieldset>
+        </form>
+
+        <footer id="footer">
+          <a href="#top">Top</a>
+          <p>
+            Somos una empresa joven que comenzó desde cero con una única persona y 
+            con una pequeña cartilla de clientes, con los meses pasa a convertirse en un referente 
+            en la informática en Canarias.
+          </p>
+        </footer>
     </body>
 </html>

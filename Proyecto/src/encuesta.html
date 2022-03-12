@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <title>Electronica S.L. Encuesta</title>
+  </head>
+    <body>
+      <span id="top"></span>
+      <header>
+        <img src="../assets/logo.jpg" alt="logo">
+        <h1>Electrónica S.L.</h1>
+        <ul id="nav-bar">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="formulario.html">Inicio de Sesión</a></li>
+          <li><a href="promociones.html">Promociones</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="contacto.html">Contacto</a></li>    
+          <li><a href="encuesta.html">Encuesta de satisfaccion</a></li>
+        </ul>
+      </header>
+
+      <form method="post"> 
+        <fieldset> 
+        <legend>Datos personales</legend>
+        <div>
+        <label for="Nombre">Nombre:</label> <br/>
+        <input type="text" name="Nombre" value="" placeholder="Nombre" required/><br/>
+        <label for="Apellidos">Apellidos:</label><br/>
+         <input type="text" name="Apellidos" value="" placeholder="Apellidos" required/><br/>
+         <label for="correo electronico">Correo electronico:</label> <br/>
+        <input type="email" name="correo electr�nico" value="" placeholder="Ej:Nombre@gmail.com" required /><br/>
+        <label for="url">URL:</label><br/>
+         <input type="url" name="url" placeholder="Escripe la URL de tu pagina web personal" /><br/>
+         <label for="Fecha_nacimiento">Fecha nacimiento:</label> <br/>
+         <input type="date" name="Fecha_nacimiento" /><br/>
+         <label for="Telefono">Telefono:</label> <br/>
+         <input type="number" name="Telefono" placeholder="922375297"/><br/>
+         <label for="Color">Color Favorito:</label> <br/>
+         <input type="color" name="Color" /><br/>
+         <label for="poblacion">Poblacion:</label> <br/>
+         <input type="text" name="poblacion" value="" /><br/>
+         <label for="provincia">Provincia:</label> <br/>
+         <input type="text" name="provincia" value="" /><br/>
+        
+        </div>
+        <div>
+        Edad <br/>
+        <input type="radio" name="edad" value="0-20" checked="checked" /> 0-20<br/>
+        <input type="radio" name="edad" value="20-40"  /> 20-40<br/>
+        <input type="radio" name="edad" value="40-60" /> 40-60<br/>
+        <input type="radio" name="edad" value="60-100" /> 60-100<br/>
+        </div>
+        <div>
+        Sexo<br/>
+        <input type="radio" name="sexo" value="male"/> Hombre<br/>
+        <input type="radio" name="sexo" value="female"  /> Mujer<br/>
+        </div>
+        
+        </fieldset>
+        
+        <fieldset> 
+        <legend>Formulario</legend>
+        <div>
+        Como nos conociste<br/>
+        <input type="checkbox" name="conocer" value="a traves de un amigo" /> a traves de un amigo<br/>
+        <input type="checkbox" name="conocer" value="a traves de un buscador" /> a traves de  un buscador<br/>
+        <input type="checkbox" name="conocer" value="a traves de la television" /> a traves de la television <br/>
+        <input type="checkbox" name="conocer" value="navegando por la red" /> navegando por la red <br/>
+        <input type="checkbox" name="conocer" value="otros" /> otros
+        </div>
+
+        <div>
+        <label for="horas">Horas jugadas diariamente:</label><br/>
+        <input type="number" name="horas" min="0" max="24" value="0" /><br/>
+        <label for="Nota">Nivel de satisfaccion:</label> <br/>
+        <select id="satisfaccion" name="satisfaccion">
+        <option value="" selected="selected"></option>
+        <option value="Poco satisfecho">Poco satisfecho</option>
+        <option value="satisfecho">satisfecho</option>
+        <option value="Muy satisfecho">Muy satisfecho</option>
+        </select>
+        <br/>
+        <label for="Nota">Nota:</label> 
+        <input type="number" name="horas" min="-10" max="10" value="0" />
+        </div>
+        
+        <div>
+        <label for="Sugerencias">Sugerencias</label><br/>
+        <textarea name="Sugerencias" cols="30" rows="10"></textarea>
+        </div>
+        </fieldset>
+        <fieldset> 
+        <legend>Enviar</legend>
+        <input type="submit" name="enviar" value="enviar" onclick="alert('Enviando')" />
+        <input type="reset" name="borrar" value="borrar" onclick="alert('Borrando')" />
+        </fieldset>
+        </form>
+
+        <footer id="footer">
+          <a href="#top">Top</a>
+          <p>
+            Somos una empresa joven que comenzó desde cero con una única persona y 
+            con una pequeña cartilla de clientes, con los meses pasa a convertirse en un referente 
+            en la informática en Canarias.
+          </p>
+        </footer>
+    </body>
+</html>
