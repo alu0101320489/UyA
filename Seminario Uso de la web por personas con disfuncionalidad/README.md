@@ -5,7 +5,7 @@
 - Pablo Fernández Herrera
 - Cristopher Alexandro Medina Peschiutta
 
-La tarea consiste en grabar un [vídeo]() en el que al menos dos componentes del grupo busquen la información y los otros dos deben comentar lo que está pasando. Y realizar un pequeño resumen sobre los aspectos comentados
+La tarea consiste en grabar un [vídeo](https://drive.google.com/drive/folders/15NlZehXBpojjqCGQIjcap1yXr-yYmytk) en el que al menos dos componentes del grupo busquen la información y los otros dos deben comentar lo que está pasando. Y realizar un pequeño resumen sobre los aspectos comentados.
 
 ## Resumen
 En esta tarea se ha realizado una búsqueda de información utilizando la extensión ChromeBox. Y como tarea se ha grabado un video en el que al menos dos componentes del grupo busquen la información y los otros dos deben comentar lo que está pasando.
