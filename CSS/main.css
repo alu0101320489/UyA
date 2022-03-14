@@ -1,13 +1,20 @@
 body{
   color: black;
   font-size: 1.5em;
-  text-ident
+  text-indent: 0.5em;
   font-family: 'Arial';
   width: 770px;
 }
 
 ul {
-  
+  position: relative;
+  list-style: none;
+}
+
+li {
+  border: 1px solid black; 
+  float: left; 
+  margin-left: 1%;
 }
 
 #Contenido {
