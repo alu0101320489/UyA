@@ -1,0 +1,67 @@
+body{
+  color: black;
+  font-size: 1.5em;
+  font-family: 'Arial';
+  width: 770px;
+}
+
+#Contenido {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  position: relative;
+}
+
+#Principal {
+  background-color: blue;
+  position: relative;
+  float: left;
+  width: 50%;
+}
+
+#Secundario {
+  background-color: yellow;
+  position: relative;
+  float: left;
+  width: 30%;
+}
+
+#Enlaces {
+  background-color: red;
+  position: relative;
+  float: left;
+  width: 20%;
+}
+
+header {
+  height: 100px;
+  background: url(./assets/cabecera.jpeg);
+}
+
+/**link{
+  color: blue;
+}**/
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  height: 150px;
+  width: 100%;
+  background: #a9855d;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+}
+
+.copyrightContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color:#fff;
+  font-family: 'Arial';
+}
