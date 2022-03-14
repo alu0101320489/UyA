@@ -12,7 +12,7 @@
 
 [Seminario 3: Seminario Uso de la web por personas con disfuncionalidad](https://github.com/alu0101320489/UyA/tree/main/Seminario%20Uso%20de%20la%20web%20por%20personas%20con%20disfuncionalidad)
 
-[Seminario 4: Legislación y Accesibilidad]()
+[Seminario 4: Legislación y Accesibilidad](https://github.com/alu0101320489/UyA/tree/main/Seminario%20Legislaci%C3%B3n%20y%20Accesibilidad)
 
 ## Prácticas
 [Página HTML](https://github.com/alu0101320489/UyA/tree/main/Proyecto)
