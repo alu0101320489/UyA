@@ -10,6 +10,10 @@
 
 [Seminario 2: Uso de la web por personas con disfuncionalidad](https://github.com/alu0101320489/UyA/blob/main/Seminario%20Uso%20de%20la%20web%20por%20personas%20con%20disfuncionalidad/README.md)
 
+[Seminario 3: Seminario Uso de la web por personas con disfuncionalidad](https://github.com/alu0101320489/UyA/tree/main/Seminario%20Uso%20de%20la%20web%20por%20personas%20con%20disfuncionalidad)
+
+[Seminario 4: Legislación y Accesibilidad]()
+
 ## Prácticas
 [Página HTML](https://github.com/alu0101320489/UyA/tree/main/Proyecto)
 
