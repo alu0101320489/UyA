@@ -16,6 +16,8 @@
 
 [Seminario 5: Perceptible](https://github.com/alu0101320489/UyA/tree/main/Seminario%20Perceptible)
 
+[Seminario 6: Perceptible y Operable]()
+
 ## Prácticas
 [Página HTML](https://github.com/alu0101320489/UyA/tree/main/Proyecto)
 
