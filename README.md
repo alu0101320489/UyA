@@ -14,6 +14,8 @@
 
 [Seminario 4: Legislación y Accesibilidad](https://github.com/alu0101320489/UyA/tree/main/Seminario%20Legislaci%C3%B3n%20y%20Accesibilidad)
 
+[Seminario 5: Perceptible]()
+
 ## Prácticas
 [Página HTML](https://github.com/alu0101320489/UyA/tree/main/Proyecto)
 
