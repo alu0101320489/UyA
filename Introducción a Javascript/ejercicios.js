@@ -53,12 +53,19 @@ function ejercicio1()
  
  function ejercicio2()
 {
-
+    node = document.createTextNode(document.getElementById("text").value);
+    document.getElementById("parrafo").appendChild(node);
 }
  
  function ejercicio3()
 {
-
+ 
+    node = document.createTextNode(numerodiv);
+    document.getElementById("parrafodiv").appendChild(node);
+    node = document.createTextNode(numerop);
+    document.getElementById("parrafop").appendChild(node);
+    node = document.createTextNode(numeroli);
+    document.getElementById("parrafoli").appendChild(node);
 }
 
  function ejercicio4()
