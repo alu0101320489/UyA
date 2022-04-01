@@ -1,11 +1,14 @@
 # Usabilidad y Accesibilidad
+
 ## Grupo 12
+
 - Marco Antonio Cabrera Hernández
 - Daniel Hernández Fajardo
 - Pablo Fernández Herrera
 - Cristopher Alexandro Medina Peschiutta
 
 ## Seminarios
+
 [Seminario 1: DCU](https://github.com/alu0101320489/UyA/blob/main/Seminario%20DCU/README.md)
 
 [Seminario 2: Uso de la web por personas con disfuncionalidad](https://github.com/alu0101320489/UyA/blob/main/Seminario%20Uso%20de%20la%20web%20por%20personas%20con%20disfuncionalidad/README.md)
@@ -18,7 +21,10 @@
 
 [Seminario 6: Perceptible y Operable](https://github.com/alu0101320489/UyA/tree/main/Seminario%20Perceptible%20Operable)
 
+[Seminario 7: Comprensible y Robusto]()
+
 ## Prácticas
+
 [Página HTML](https://github.com/alu0101320489/UyA/tree/main/Proyecto)
 
 [Página CSS](https://github.com/alu0101320489/UyA/tree/main/CSS)
