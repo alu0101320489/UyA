@@ -59,7 +59,9 @@ function ejercicio1()
  
  function ejercicio3()
 {
- 
+    const numerop = document.getElementsByTagName("p").length;
+    const numerodiv = document.getElementsByTagName("div").length;
+    const numeroli = document.getElementsByTagName("li").length;
     node = document.createTextNode(numerodiv);
     document.getElementById("parrafodiv").appendChild(node);
     node = document.createTextNode(numerop);
