@@ -21,7 +21,7 @@
 
 [Seminario 6: Perceptible y Operable](https://github.com/alu0101320489/UyA/tree/main/Seminario%20Perceptible%20Operable)
 
-[Seminario 7: Comprensible y Robusto]()
+[Seminario 7: Comprensible y Robusto](https://github.com/alu0101320489/UyA/tree/main/Seminario%20Principios%20Comprensible%20y%20Robusto)
 
 ## Prácticas
 
