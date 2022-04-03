@@ -52,10 +52,10 @@ const obj = JSON.parse(text);
     node = document.createTextNode(numeroli);
     document.getElementById("parrafoli").appendChild(node);
 }
-
+var suma = 0;
  function ejercicio4()
  {
-    var suma = 0;
+    
     for (let index = 0; index < obj.compra.length; index++) {
         const element = obj.compra[index];
         suma = suma + (element.precio * element.descuento) / 100;
@@ -80,14 +80,13 @@ const obj = JSON.parse(text);
 
  function ejercicio5()
  {
-    const importe = "15";
     const metodo = document.createTextNode(document.getElementById("metodo_pago").value);
     const d = new Date();
     const dia = d.getDate();;
     if (metodo == "2") {
         dia = dia = (d.getDate() + 10) % 31;
     }
-    node = document.createTextNode(importe);
+    node = document.createTextNode(suma);
     document.getElementById("v_importe").appendChild(node);
     node = document.createTextNode(dia);
     document.getElementById("fecha").appendChild(node);
