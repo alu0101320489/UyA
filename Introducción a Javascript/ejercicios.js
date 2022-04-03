@@ -1,56 +1,39 @@
-function ejercicio1()
-{ 
-    const header = document.createElement("h1");
-     node = document.createTextNode("Introducción al árbol DOM");
-    header.appendChild(node);
+// inicializamos el json como una variable para asi no terner que llamarlo mediante una llamada get
+let text = '{'+
+'"nombre" : "Paco",'+
+'"dni" : "9999999P",'+
+' "fecha_nacimiento" : 2016,'+
+'"num_cuenta" : 5555555,'+
+'"active" : true,'+
+'"compra" : ['+
+    '{'+
+        '"nombre" : "ordenador",'+
+        '"precio" : 29,'+
+        '"descuento" : 5,'+
+        '"modo_pago" : "unico"'+
+    '},'+
+    '{'+
+        '"nombre" : "consola",'+
+        '"precio" : 100,'+
+        '"descuento" : 10,'+
+        '"modo_pago" : "plazos"'+
+    '},'+
+    '{'+
+        '"nombre" : "pantalla",'+
+        '"precio" : 50,'+
+        '"descuento" : 0,'+
+        '"modo_pago" : "unico"'+
+    '},'+
+    '{'+
+        '"nombre" : "teclado",'+
+        '"precio" : 30,'+
+        '"descuento" : 50,'+
+        '"modo_pago" : "plazos"'+
+    '}'+
+    ']'+
+'}';
+const obj = JSON.parse(text);
 
-    const element = document.getElementById("div_ejer1");
-    element.appendChild(header);
-
-    const parrafo1 = document.createElement("p");
-     node = document.createTextNode("El DOM es una interfaz de objeto de un documento HTML, representa de forma estructurada el documento y proporciona interfaces para su manipulación");
-    parrafo1.appendChild(node);
-
-
-    element.appendChild(parrafo1);
-
-    const parrafo2 = document.createElement("p");
-     node = document.createTextNode("Puedes consultar información en la ");
-    parrafo2.appendChild(node);
-
-    const enlace = document.createElement("a");
-    enlace.id = "enlace_Mozilla";
-    node = document.createTextNode("Documentación de Mozilla");
-    enlace.appendChild(node);
-    parrafo2.appendChild(enlace);
- 
-    element.appendChild(parrafo2);
-    document.getElementById("enlace_Mozilla").href = "https://developer.mozilla.org/es/docs/Referencia_DOM_de_Gecko/Introducci%C3%B3n";
-
-    const parrafo3 = document.createElement("p");
-     node = document.createTextNode("Algunos tipos de datos:");
-    parrafo3.appendChild(node);
-
-
-    element.appendChild(parrafo3);
-
-    const lista = document.createElement("ul");
-    const elemto_lista = document.createElement("li");
-    const elemto_lista2 = document.createElement("li");
-    const elemto_lista3 = document.createElement("li");
-     node = document.createTextNode("document");
-    elemto_lista.appendChild(node);
-    lista.appendChild(elemto_lista);
-    node = document.createTextNode("element");
-    elemto_lista2.appendChild(node);
-    lista.appendChild(elemto_lista2);
-    node = document.createTextNode("attribute");
-    elemto_lista3.appendChild(node);
-    lista.appendChild(elemto_lista3);
-
-    element.appendChild(lista);
-}
- 
  function ejercicio2()
 {
     node = document.createTextNode(document.getElementById("text").value);
@@ -72,7 +55,27 @@ function ejercicio1()
 
  function ejercicio4()
  {
+    var suma = 0;
+    for (let index = 0; index < obj.compra.length; index++) {
+        const element = obj.compra[index];
+        suma = suma + (element.precio * element.descuento) / 100;
+    }
 
+    node = document.createTextNode("usuario: " + obj.nombre);
+    document.getElementById("resultado_compra").appendChild(node);
+    for (let index = 0; index < obj.compra.length; index++) {
+        const element = obj.compra[index]; 
+        node = document.createTextNode( " ,producto: " + element.nombre);
+        document.getElementById("resultado_compra").appendChild(node);
+        node = document.createTextNode( " ,precio: " + element.precio);
+        document.getElementById("resultado_compra").appendChild(node);
+        node = document.createTextNode( " ,descuento: " + element.descuento);
+        document.getElementById("resultado_compra").appendChild(node);
+        node = document.createTextNode( " ,modo de pago: " + element.modo_pago);
+        document.getElementById("resultado_compra").appendChild(node);
+    }
+    node = document.createTextNode(" ,Importe total: " + suma);
+    document.getElementById("resultado_compra").appendChild(node);
  }
 
  function ejercicio5()
@@ -90,36 +93,5 @@ function ejercicio1()
     document.getElementById("fecha").appendChild(node);
 
  }
-
-
- function ejercicio6()
- {
-
- }
-
- function ejercicio7()
- {
-
- }
- 
- function ejercicio8()
- {
-   	 
- }
- 
- function ejercicio9()
- {
-
- }
- 
-function ejercicio10()
- {
-
- }
- 
- 
- 
- 
- 
  
  
