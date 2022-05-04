@@ -1,89 +1,260 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <link type="text/css" rel="stylesheet" href="css/index-style.css"  media="screen,projection"/>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.7.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.7.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.7.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.7.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.7.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.7.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.7.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.7.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.7.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.7.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    <body>
+      <nav id="Nav-bar">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo center">Electronica S.L.</a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="">Catálogo</a></li>
+            <li><a href="">Contacto</a></li>
+            <li><a href="pages/Log_In_Form.html">Inicio de Sesión</a></li>
+          </ul>
+        </div>
+      </nav>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+      <div>
+        <h1 class="center-align">Ofertas</h1>
+      </div>
+      <div>
+        <table>
+          <thead>
+            <tr>
+                <th>Oferta</th>
+                <th>Descuento</th>
+                <th>Precio</th>
+            </tr>
+          </thead>
+  
+          <tbody>
+            <tr>
+              <td class="card-panel grey lighten-5 z-depth-1">
+                <div class="col s12 m8 offset-m2 l6 offset-l3">
+                  <div>
+                    <div class="row valign-wrapper">
+                      <div class="col s2">
+                        <img src="images/oferta1.jpg" alt="" class="square responsive-img">
+                      </div>
+                      <div class="col s10">            
+                        <div class="card-action">
+                          <a href="#">Lenovo IdeaPad 5 14ITL05 Intel Core i5-1135G7/8GB/512GB SSD/14"</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="card-panel grey lighten-5 z-depth-1">14%</td>
+              <td class="card-panel grey lighten-5 z-depth-1">$639</td>
+            </tr>
+            <tr>
+              <td class="card-panel grey lighten-5 z-depth-1">
+                <div class="col s12 m8 offset-m2 l6 offset-l3">
+                  <div>
+                    <div class="row valign-wrapper">
+                      <div class="col s2">
+                        <img src="images/oferta2.jpg" alt="" class="square responsive-img">
+                      </div>
+                      <div class="col s10">
+                        <div class="card-action">
+                          <a href="#">HyperX Cloud II Auriculares Gaming 7.1 Rojos</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="card-panel grey lighten-5 z-depth-1">35%</td>
+              <td class="card-panel grey lighten-5 z-depth-1">$69.99</td>
+            </tr>
+            <tr>
+              <td class="card-panel grey lighten-5 z-depth-1">
+                <div class="col s12 m8 offset-m2 l6 offset-l3">
+                  <div>
+                    <div class="row valign-wrapper">
+                      <div class="col s2">
+                        <img src="images/oferta3.jpg" alt="" class="square responsive-img">
+                      </div>
+                      <div class="col s10">
+                        <div class="card-action">
+                          <a href="#">Asus E410MA-EK007TS Intel Celeron N4020/4GB/64GB eMMC/14"</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="card-panel grey lighten-5 z-depth-1">12%</td>
+              <td class="card-panel grey lighten-5 z-depth-1">$238</td>
+            </tr>
+            <tr>
+              <td class="card-panel grey lighten-5 z-depth-1">
+                <div class="col s12 m8 offset-m2 l6 offset-l3">
+                  <div>
+                    <div class="row valign-wrapper">
+                      <div class="col s2">
+                        <img src="images/oferta4.jpg" alt="" class="square responsive-img">
+                      </div>
+                      <div class="col s10">
+                        <div class="card-action">
+                          <a href="#">Logitech G203 Lightsync 2nd Gen Ratón Gaming 8000DPI RGB Blanco</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="card-panel grey lighten-5 z-depth-1">45%</td>
+              <td class="card-panel grey lighten-5 z-depth-1">$21.99</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
-</html>
+      <div>
+        <h1 class="center-align">Catálogo</h1>
+      </div>
+      <div class="container #880e4f pink darken-4">
+        <div class="row">
+          <div class="col s3">
+            <div class="card">
+              <div class="card-image">
+                <img src="images/componente.jpg">
+              </div>
+              <div class="card-action">
+                <a href="#">Componentes</a>
+              </div>
+            </div>
+          </div>
+          <div class="col s3">
+            <div class="card">
+              <div class="card-image">
+                <img src="images/pc.jpg">
+              </div>
+              <div class="card-action">
+                <a href="#">Ordenadores</a>
+              </div>
+            </div>
+          </div>
+          <div class="col s3">
+            <div class="card">
+              <div class="card-image">
+                <img src="images/cascos.jpg">
+              </div>
+              <div class="card-action">
+                <a href="#">Periféricos</a>
+              </div>
+            </div>
+          </div>
+          <div class="col s3">
+            <div class="card">
+              <div class="card-image">
+                <img src="images/movil.jpg">
+              </div>              
+              <div class="card-action">
+                <a href="#">Móviles</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h1 class="center-align">Sobre nosotros</h1>
+      </div>
+      <div class="row">
+        <div class="col s4">
+          <div class="card">
+            <div class="center-align">
+              <div class="container">
+                <img class="circle responsive-img" src="images/logo.jpg" alt="" style="max-height: 225px;">
+              </div>
+              <h2>Quienes Somos</h2>
+            </div>
+            <div class="card-content">
+              <p>Somos una empresa joven que comenzó desde cero con una única persona y con una pequeña cartilla de clientes, con los meses pasa a convertirse en un referente en la informática en Canarias</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s4">
+          <div class="card">
+            <div class="center-align">
+              <div class="container">
+                <img class="circle responsive-img" src="images/compr.jpg">
+              </div>
+              <h2 class="">Compromiso</h2>
+            </div>
+            <div class="card-content">
+              <p>Estamos totalmente comprometidos con nuestros clientes, intentamos ofrecer el mejor trato posible y ofrecer una solución satisfactoria en caso de algún inconveniente.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s4">
+          <div class="card">
+            <div class="center-align">
+              <div class="container">
+                <img class="circle responsive-img" src="images/contacto.jpg" alt="" style="max-height: 225px;">
+              </div>
+              <h2 class="">Contacto</h2>
+            </div>
+            <div class="card-content">
+              <p>Puede contactar con nosotros en cualquier momento de 9:30 a 19:00 a través de telefonía o correo. A continuación puede acceder a más información</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+
+      <footer class="page-footer #d50000 red accent-4">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text"></h5>
+              <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Links</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2014 Copyright Text
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          </div>
+        </div>
+      </footer>
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/index.js"></script>
+       <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </body>
+  </html>
