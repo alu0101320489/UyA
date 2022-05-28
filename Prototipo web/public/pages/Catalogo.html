@@ -328,22 +328,38 @@
               </tbody>
             -->
 
-            <div class="row">
-              <form>
+        <div id="filtrado" class="row">
+		   <p style="margin-left: 3%; font-size:160%;">Filtros de búsqueda</p>
+           <div class="col s12" style="margin-left: 3%;">
+              <form id="Filtro">
                 <label>
-                  <input type="checkbox" class="filled-in" checked="checked"/>
-                  <span>Opcion1</span>
+                  <input id="Componente" name="filtro" type="checkbox" class="filled-in" checked="checked"/>
+                  <span style="width: 15%;">Componente</span>
                 </label>
-                <label>
-                  <input type="checkbox" class="filled-in" checked="checked" />
-                  <span>Opcion2</span>
+		        <label>
+                  <input id="Pantalla" name="filtro" type="checkbox" class="filled-in" checked="checked"/>
+                  <span style="width: 15%;">Pantalla</span>
                 </label>
-                <label>
-                  <input type="checkbox" class="filled-in" checked="checked" />
-                  <span>Opcion3</span>
+		        <label>
+                  <input id="Sobremesa" name="filtro" type="checkbox" class="filled-in" checked="checked"/>
+                  <span style="width: 15%;">Sobremesa</span>
                 </label>
+		        <a class="waves-effect waves-light btn" id="btn">Filtrar</a>
               </form>
             </div>
+	  </div>
+
+	<script>
+        const btn = document.querySelector('#btn');
+        btn.addEventListener('click', (event) => {
+            let checkboxes = document.querySelectorAll('input[name="filtro"]:checked');
+            let values = [];
+            checkboxes.forEach((checkbox) => {
+                values.push(checkbox.value);
+            });
+            alert(values);
+        });    
+    	</script>
 
             <div id="catalogo" class="row">
               
