@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="es"><head>
+<html lang="es">
+  <head>
     <meta charset="UTF-8">
     <title>Catalogo</title>
     <!--Import Google Icon Font-->
@@ -8,23 +9,21 @@
     <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link type="text/css" rel="stylesheet" href="../css/index-style.css"  media="screen,projection"/>
-    
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-</head>
-<body>
-    <nav id="Nav-bar">
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo center">Electronica S.L.</a>
-          <ul id="nav-mobile" class="left hide-on-med-and-down">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="">Catálogo</a></li>
-            <li><a href="">Contacto</a></li>
-            <li><a href="../pages/Log_In_Form.html">Inicio de Sesión</a></li>
-          </ul>
-        </div>
-      </nav>
+  </head>
+  <body>
+    <nav id="Nav-bar" role="banner" arial-label="Cabecera">
+      <div class="nav-wrapper blue darken-2">
+        <a href="#" class="brand-logo center">Electronica S.L.</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <li><a role= "button" arial-label="Vuelve a pagina de inicio." tabindex="0" href="../index.html">Inicio</a></li>
+          <li><a role= "button" arial-label="Ve a pagina de catálogo." tabindex="0" href="../pages/Catalogo.html">Catálogo</a></li>
+          <li><a role= "button" arial-label="Ve a pagina de contacto." tabindex="0" href="../pages/Contacto.html">Contacto</a></li>
+          <li><a role= "button" arial-label="Ve a pagina de inicio de sesión." tabindex="0" href="../pages/Log_In_Form.html">Inicio de Sesión</a></li>
+        </ul>
+      </div>
+    </nav>
 
       <div>
         <h1 class="center-align">Catálogo</h1>
@@ -559,7 +558,41 @@
               
 
 
-              
+    <!--   Footer Seccion   -->
+    <footer role=”contentinfo” arial-label="Información sobre la web y enlaces." class="page-footer blue darken-2">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h3>Sobre nosotros</h3>
+            <p class="grey-text text-lighten-4">Somos una empresa joven que comenzó desde cero con una única persona y con una pequeña cartilla de clientes, con los meses pasa a convertirse en un referente en la informática en Canarias</p>
+          </div>
+          <div class="col l3 s12">
+            <h3>Links</h3>
+            <ul role=”navigation” arial-label="Menú de informacion.">
+              <li><a role= "button" arial-label="Ve a pagina de contacto." tabindex="0" class="white-text" href="../pages/Contacto.html">Contacto</a></li>
+              <li><a role= "button" arial-label="Ve a ayuda." tabindex="0" class="white-text" href="../pages/Log_In_Form.html">Inicio de Sesión</a></li>
+            </ul>
+          </div>
+          <div class="col l3 s12">
+            <h3 class="white-text">Social</h3>
+            <ul role=”navigation” arial-label="Menú de informacion.">
+              <li>
+                <a role= "button" arial-label="Enlace a facebook." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="../images/facebook.png" alt="Logo facebook" width="25" height="25"></img></a>
+                <a role= "button" arial-label="Enlace a linkedin." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="../images/linkedin.png" alt="Logo facebook" width="25" height="25"></img></a>
+              </li>
+              <li><a role= "button" arial-label="Enlace a instagram." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="../images/instagram.png" alt="Logo instagram" width="25" height="25"></img></a>
+                  <a role= "button" arial-label="Enlace a twitter." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="../images/twitter.png" alt="Logo twitter" width="25" height="25"></img></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <p>Diseñado por <a tabindex="0" class="brown-text text-lighten-3" href="">Grupo 12</a></p>
+        </div>
+      </div>
+    </footer>
 
 
 
@@ -571,7 +604,6 @@
 <script type="text/javascript" src="../js/catalogo.js"></script>
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    
 <script type="module">
       // Import the functions you need from the SDKs you need
       import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js";
@@ -579,6 +611,5 @@
       // TODO: Add SDKs for Firebase products that you want to use
       // https://firebase.google.com/docs/web/setup#available-libraries
 </script>
-
 </body>
 </html>
