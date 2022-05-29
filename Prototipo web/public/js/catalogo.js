@@ -93,12 +93,10 @@ $("#Filtro").click(function () {
           if(checkbox.value=="on") {
           if(item.Etiqueta == checkbox.id) {
             prod.push(item.IdProducto);
-            //console.log(checkbox.id);
           }
         };
       });
       });
-      //console.log(prod);
       var find = false;
       $.each(data, function(i, item) {
         $.each(prod, function(j, p) {
