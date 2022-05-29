@@ -9,7 +9,7 @@
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link type="text/css" rel="stylesheet" href="css/index-style.css"  media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
     <!--Let browser know website is optimized for mobile-->
     <meta charset="UTF-8">
@@ -29,10 +29,46 @@
       </div>
     </nav>
 
+    <div id="breadcrumbs-wrapper" class="white" aria-label="Breadcrumbs">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m12 l12">
+            <ol class="breadcrumbs">
+                <li><a href="index.html">Inicio</a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!--   Ofertas Seccion   -->
     <div>
       <h1 class="center-align">Ofertas</h1>
     </div>
+
+    <div class="carousel carousel-slider center">
+      <div class="carousel-fixed-item center">
+        <a class="btn white grey-text darken-text-2">Comprar</a>
+      </div>
+      <div class="carousel-item blue darken-2" href="">
+        <h2>First Panel</h2>
+        <p class="blue darken-2">This is your first panel</p>
+      </div>
+      <div class="carousel-item amber white-text" href="#two!">
+        <h2>Second Panel</h2>
+        <p class="white-text">This is your second panel</p>
+      </div>
+      <div class="carousel-item green white-text" href="#three!">
+        <h2>Third Panel</h2>
+        <p class="white-text">This is your third panel</p>
+      </div>
+      <div class="carousel-item blue white-text" href="#four!">
+        <h2>Fourth Panel</h2>
+        <p class="white-text">This is your fourth panel</p>
+      </div>
+    </div>
+
+<!--
     <div>
       <table>
         <thead>
@@ -126,12 +162,12 @@
         </tbody>
       </table>
     </div>
-
+-->
     <!--   Catálogo Seccion   -->
     <div>
       <h1 class="center-align">Catálogo</h1>
     </div>
-    <div class="container #607d8b blue-grey">
+    <div class="container blue darken-2">
       <div class="row">
         <div class="col s3">
           <div class="card">
@@ -182,7 +218,7 @@
     </div>
     <div class="row">
       <div class="col s4">
-        <div class="card">
+        <div class="card Large">
           <div class="center-align">
             <div class="container">
               <img class="circle responsive-img" src="images/logo.jpg" alt="" style="max-height: 225px;">
@@ -195,7 +231,7 @@
         </div>
       </div>
       <div class="col s4">
-        <div class="card">
+        <div class="card Large">
           <div class="center-align">
             <div class="container">
               <img class="circle responsive-img" src="images/compr.jpg">
@@ -208,7 +244,7 @@
         </div>
       </div>
       <div class="col s4">
-        <div class="card">
+        <div class="card Large">
           <div class="center-align">
             <div class="container">
               <img class="circle responsive-img" src="images/contacto.jpg" alt="" style="max-height: 225px;">
@@ -257,5 +293,9 @@
         </div>
       </div>
     </footer>
+
+    <!--  Scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
   </body>
 </html>

@@ -16,3 +16,58 @@
 footer.page-footer {
   margin: 0;
 }
+.checkbox-blue[type="checkbox"].filled-in:checked+span:not(.lever):after {
+  border: 2px solid #23c9db;
+  background-color: #23c9db;
+}
+
+#breadcrumbs-wrapper {
+  background: #f3f3f3;
+}
+
+h5.breadcrumbs-header {
+  font-size: 1.64rem;
+  line-height: 1.804rem;
+  margin: 1.5rem 0 0 0;
+}
+
+.breadcrumbs {
+  padding: 0;
+  margin: 15px 0;
+  list-style: none;
+}
+
+
+.breadcrumbs > li {
+  display: inline-block;
+}
+
+.breadcrumbs > li + li:before {
+  padding: 0 5px;
+  color: #ccc;
+  content: "/\00a0";
+}
+
+.breadcrumbs .active {
+  font-weight: normal;
+  color: #999;
+}
+
+.breadcrumbs-nav {
+  margin: 8px 0 9px;
+}
+
+.breadcrumb:before {
+  content: "\e7c3";
+  font-family: "Material-Design-Icons";
+}
+
+.filled-in {
+  z-index: -1;
+}
+
+#Nav-bar {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}

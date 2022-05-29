@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8">
-    <title>Catalogo</title>
+    <title>Catálogo</title>
+
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link type="text/css" rel="stylesheet" href="../css/index-style.css"  media="screen,projection"/>
+    <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
     <!--Let browser know website is optimized for mobile-->
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
+
   <body>
     <nav id="Nav-bar" role="banner" arial-label="Cabecera">
       <div class="nav-wrapper blue darken-2">
@@ -25,9 +29,22 @@
       </div>
     </nav>
 
-      <div>
-        <h1 class="center-align">Catálogo</h1>
+    <div id="breadcrumbs-wrapper" class="white" aria-label="Breadcrumbs">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m12 l12">
+            <ol class="breadcrumbs">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="Catalogo.html">Catálogo</a></li>
+            </ol>
+          </div>
+        </div>
       </div>
+    </div>
+
+    <div>
+      <h1 class="center-align">Catálogo</h1>
+    </div>
 
       <!--
             Tabla de componentes
@@ -51,7 +68,7 @@
                         <div class="col s2">
                           <img src="../images/componentes1.jpg" alt="" class="square responsive-img">
                         </div>
-                        <div class="col s10">            
+                        <div class="col s10">
                           <div class="card-action">
                             <a href="#">Intel BV80605001911APS LBLC</a>
                           </div>
@@ -327,236 +344,242 @@
               </tbody>
             -->
 
-        <div id="filtrado" class="row">
-		   <p style="margin-left: 3%; font-size:160%;">Filtros de búsqueda</p>
-           <div class="col s12" style="margin-left: 3%;">
-              <form id="Filtro">
-                <label>
-                  <input id="Componente" name="filtro" type="checkbox" class="filled-in" checked="checked"/>
-                  <span style="width: 15%;">Componente</span>
-                </label>
-		        <label>
-                  <input id="Pantalla" name="filtro" type="checkbox" class="filled-in" checked="checked"/>
-                  <span style="width: 15%;">Pantalla</span>
-                </label>
-		        <label>
-                  <input id="Sobremesa" name="filtro" type="checkbox" class="filled-in" checked="checked"/>
-                  <span style="width: 15%;">Sobremesa</span>
-                </label>
-		        <a class="waves-effect waves-light btn" id="btn">Filtrar</a>
-              </form>
-            </div>
+    <div id="filtrado" class="row">
+      <p style="margin-left: 3%; font-size:160%;">Filtros de búsqueda</p>
+      <div class="col s12" style="margin-left: 3%;">
+        <form id="Filtro">
+          <label>
+            <input id="Componente" name="filtro" type="checkbox" class="filled-in checkbox-blue" checked="checked"/>
+            <span style="width: 15%;">Componentes</span>
+          </label>
+          <label>
+            <input id="Monitor" name="filtro" type="checkbox" class="filled-in checkbox-blue" checked="checked"/>
+            <span style="width: 15%;">Monitores</span>
+          </label>
+          <label>
+            <input id="Sobremesa" name="filtro" type="checkbox" class="filled-in checkbox-blue" checked="checked"/>
+            <span style="width: 15%;">Sobremesas</span>
+          </label>
+          <label>
+            <input id="Portatil" name="filtro" type="checkbox" class="filled-in checkbox-blue" checked="checked"/>
+            <span style="width: 15%;">Portátiles</span>
+          </label>
+          <label>
+            <input id="Periferico" name="filtro" type="checkbox" class="filled-in checkbox-blue" checked="checked"/>
+            <span style="width: 15%;">Periféricos</span>
+          </label>
+          <a class="btn" id="btn">Filtrar</a>
+        </form>
+      </div>
 	  </div>
 
-	<script>
-        const btn = document.querySelector('#btn');
-        btn.addEventListener('click', (event) => {
-            let checkboxes = document.querySelectorAll('input[name="filtro"]:checked');
-            let values = [];
-            checkboxes.forEach((checkbox) => {
-                values.push(checkbox.value);
-            });
-            alert(values);
-        });    
-    	</script>
+    <script>
+      const btn = document.querySelector('#btn');
+      btn.addEventListener('click', (event) => {
+          let checkboxes = document.querySelectorAll('input[name="filtro"]:checked');
+          let values = [];
+          checkboxes.forEach((checkbox) => {
+              values.push(checkbox.value);
+          });
+          alert(values);
+      });
+    </script>
 
-            <div id="catalogo" class="row">
-              
-              <div class= "col s3" >
-                <a id="producto1" href="Producto.html">
-                  <div class="card small">
-                    <div class="center-align">
-                      <div class="container">
-                          <img src="../images/bdatos/msi-optix-g24c4.webp" alt="" class="square responsive-img" style="height: 50%;width: 50%;">
-                      </div>
-                      <div style="height: 20%;">
-                        <p class="">MSI Optix G24C4 23.6 LED FullHD 144Hz Freesync Curva</p>
-                        <p>$56.99</p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
+    <div id="catalogo" class="row">
+      <!--
+      <div class= "col s3" >
+        <a id="producto1" href="Producto.html">
+          <div class="card small">
+            <div class="center-align">
+              <div class="container">
+                  <img src="../images/bdatos/msi-optix-g24c4.webp" alt="" class="square responsive-img" style="height: 50%;width: 50%;">
               </div>
-
-              <div class= "col s3">
-                <a href="#">
-                  <div class="card small">
-                    <div class="center-align">
-                      <div class="container">
-                          <img src="../images/bdatos/newskill-icarus.webp" alt="" class="square responsive-img" style="height: 50%;width: 50%;">
-                      </div>
-                      <div>
-                        <p class="">Newskill Icarus RGB IC27QRC 27 LED QuadHD 165Hz G-Sync Compatible</p>
-                        <p>$56.99</p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
+              <div style="height: 20%;">
+                <p class="">MSI Optix G24C4 23.6 LED FullHD 144Hz Freesync Curva</p>
+                <p>$56.99</p>
               </div>
-
-              <div class= "col s3" >
-                <a href="#">
-                  <div class="card small">
-                    <div class="center-align">
-                      <div class="container">
-                          <img src="../images/bdatos/lenovo-ideapad-3.webp" alt="" class="square responsive-img" style="height: 50%;width: 50%;">
-                      </div>
-                      <div style="height: 20%;">
-                        <p class="">Lenovo IdeaPad 3 15ITL6 Intel Core i5-1135G7/8 GB/512GB SSD/15.6</p>
-                        <p>$56.99</p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div class= "col s3" >
-                <a href="#">
-                  <div class="card small">
-                    <div class="center-align">
-                      <div class="container">
-                          <img src="../images/bdatos/acer-nitro-5.webp" alt="" class="square responsive-img" style="height: 50%;width: 50%;">
-                      </div>
-                      <div style="height: 20%;">
-                        <p class="">Acer Nitro 5 AN515-56 Intel Core i5-11300H/8GB/512GB SSD/GTX 1650/15.6</p>
-                        <p>$56.99</p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div class= "col s3" >
-                <a href="#">
-                  <div class="card small">
-                    <div class="center-align">
-                      <div class="container">
-                          <img src="../images/bdatos/msi-mag-meta.webp" alt="" class="square responsive-img" style="height: 50%;width: 50%;">
-                      </div>
-                      <div style="height: 20%;">
-                        <p class="">MSI MAG META S 5SI-030XES AMD Ryzen 5 3600/16GB/512GB SSD/GTX 1660 SUPER</p>
-                        <p>$56.99</p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div class= "col s3">
-                <a href="#">
-                  <div class="card small">
-                    <div class="center-align">
-                      <div class="container">
-                          <img src="../images/bdatos/hp-pavilion-gaming.webp" alt="" class="square responsive-img" style="height: 50%;width: 50%;">
-                      </div>
-                      <div>
-                        <p class="">HP Pavilion Gaming TG01-1107ns Intel Core i7-10700F/16GB/1TB+512GB SSD/RTX 3060Ti</p>
-                        <p>$56.99</p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div class= "col s3">
-                <a href="#">
-                  <div class="card small">
-                    <div class="center-align">
-                      <div class="container">
-                          <img src="../images/bdatos/logitech-g403.webp" alt="" class="square responsive-img" style="height: 50%;width: 50%;">
-                      </div>
-                      <div>
-                        <p class="">Logitech G403 Hero Ratón Gaming 25600DPI</p>
-                        <p>$56.99</p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div class= "col s3">
-                <a href="#">
-                  <div class="card small">
-                    <div class="center-align">
-                      <div class="container">
-                          <img src="../images/bdatos/logitech-g413.webp" alt="" class="square responsive-img" style="height: 50%;width: 50%;">
-                      </div>
-                      <div>
-                        <p class="">Logitech G413 Teclado Mecánico Gaming</p>
-                        <p>$56.99</p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div class= "col s3">
-                <a href="#">
-                  <div class="card small">
-                    <div class="center-align">
-                      <div class="container">
-                          <img src="../images/bdatos/zotac-gaming-geforce-rtx-3060.webp" alt="" class="square responsive-img" style="height: 50%;width: 50%;">
-                      </div>
-                      <div>
-                        <p class="">Zotac Gaming GeForce RTX 3060 Twin Edge OC LHR 12GB GDDR6</p>
-                        <p>$56.99</p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div class= "col s3">
-                <a href="#">
-                  <div class="card small">
-                    <div class="center-align">
-                      <div class="container">
-                          <img src="../images/bdatos/corsair-vengeance-lpx-ddr4-3200.webp" alt="" class="square responsive-img" style="height: 50%;width: 50%;">
-                      </div>
-                      <div>
-                        <p class="">Corsair Vengeance LPX DDR4 3200 PC4-25600 16GB 2X8GB CL16 Negro</p>
-                        <p>$56.99</p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div class= "col s3">
-                <a href="#">
-                  <div class="card small">
-                    <div class="center-align">
-                      <div class="container">
-                          <img src="../images/bdatos/amd-ryzen-5-5600x.webp" alt="" class="square responsive-img" style="height: 50%;width: 50%;">
-                      </div>
-                      <div>
-                        <p class="">AMD Ryzen 5 5600X 3.7GHz</p>
-                        <p>$56.99</p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div class= "col s3">
-                <a href="#">
-                  <div class="card small">
-                    <div class="center-align">
-                      <div class="container">
-                          <img src="../images/bdatos/intel-core-i7-11700k.webp" alt="" class="square responsive-img" style="height: 50%;width: 50%;">
-                      </div>
-                      <div>
-                        <p class="">Intel Core i7-11700K 3.6 GHz</p>
-                        <p>$56.99</p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
             </div>
-              
+          </div>
+        </a>
+      </div>
 
+      <div class= "col s3">
+        <a id="producto2" href="Producto.html">
+          <div class="card small">
+            <div class="center-align">
+              <div class="container">
+                  <img src="../images/bdatos/newskill-icarus.webp" alt="" class="square responsive-img" style="height: 50%;width: 50%;">
+              </div>
+              <div>
+                <p class="">Newskill Icarus RGB IC27QRC 27 LED QuadHD 165Hz G-Sync Compatible</p>
+                <p>$56.99</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+      <div class= "col s3" >
+        <a href="#">
+          <div class="card small">
+            <div class="center-align">
+              <div class="container">
+                  <img src="../images/bdatos/lenovo-ideapad-3.webp" alt="" class="square responsive-img" style="height: 50%;width: 50%;">
+              </div>
+              <div style="height: 20%;">
+                <p class="">Lenovo IdeaPad 3 15ITL6 Intel Core i5-1135G7/8 GB/512GB SSD/15.6</p>
+                <p>$56.99</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class= "col s3" >
+        <a href="#">
+          <div class="card small">
+            <div class="center-align">
+              <div class="container">
+                  <img src="../images/bdatos/acer-nitro-5.webp" alt="" class="square responsive-img" style="height: 50%;width: 50%;">
+              </div>
+              <div style="height: 20%;">
+                <p class="">Acer Nitro 5 AN515-56 Intel Core i5-11300H/8GB/512GB SSD/GTX 1650/15.6</p>
+                <p>$56.99</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class= "col s3" >
+        <a href="#">
+          <div class="card small">
+            <div class="center-align">
+              <div class="container">
+                  <img src="../images/bdatos/msi-mag-meta.webp" alt="" class="square responsive-img" style="height: 50%;width: 50%;">
+              </div>
+              <div style="height: 20%;">
+                <p class="">MSI MAG META S 5SI-030XES AMD Ryzen 5 3600/16GB/512GB SSD/GTX 1660 SUPER</p>
+                <p>$56.99</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class= "col s3">
+        <a href="#">
+          <div class="card small">
+            <div class="center-align">
+              <div class="container">
+                  <img src="../images/bdatos/hp-pavilion-gaming.webp" alt="" class="square responsive-img" style="height: 50%;width: 50%;">
+              </div>
+              <div>
+                <p class="">HP Pavilion Gaming TG01-1107ns Intel Core i7-10700F/16GB/1TB+512GB SSD/RTX 3060Ti</p>
+                <p>$56.99</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class= "col s3">
+        <a href="#">
+          <div class="card small">
+            <div class="center-align">
+              <div class="container">
+                  <img src="../images/bdatos/logitech-g403.webp" alt="" class="square responsive-img" style="height: 50%;width: 50%;">
+              </div>
+              <div>
+                <p class="">Logitech G403 Hero Ratón Gaming 25600DPI</p>
+                <p>$56.99</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class= "col s3">
+        <a href="#">
+          <div class="card small">
+            <div class="center-align">
+              <div class="container">
+                  <img src="../images/bdatos/logitech-g413.webp" alt="" class="square responsive-img" style="height: 50%;width: 50%;">
+              </div>
+              <div>
+                <p class="">Logitech G413 Teclado Mecánico Gaming</p>
+                <p>$56.99</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class= "col s3">
+        <a href="#">
+          <div class="card small">
+            <div class="center-align">
+              <div class="container">
+                  <img src="../images/bdatos/zotac-gaming-geforce-rtx-3060.webp" alt="" class="square responsive-img" style="height: 50%;width: 50%;">
+              </div>
+              <div>
+                <p class="">Zotac Gaming GeForce RTX 3060 Twin Edge OC LHR 12GB GDDR6</p>
+                <p>$56.99</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class= "col s3">
+        <a href="#">
+          <div class="card small">
+            <div class="center-align">
+              <div class="container">
+                  <img src="../images/bdatos/corsair-vengeance-lpx-ddr4-3200.webp" alt="" class="square responsive-img" style="height: 50%;width: 50%;">
+              </div>
+              <div>
+                <p class="">Corsair Vengeance LPX DDR4 3200 PC4-25600 16GB 2X8GB CL16 Negro</p>
+                <p>$56.99</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class= "col s3">
+        <a href="#">
+          <div class="card small">
+            <div class="center-align">
+              <div class="container">
+                  <img src="../images/bdatos/amd-ryzen-5-5600x.webp" alt="" class="square responsive-img" style="height: 50%;width: 50%;">
+              </div>
+              <div>
+                <p class="">AMD Ryzen 5 5600X 3.7GHz</p>
+                <p>$56.99</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class= "col s3">
+        <a href="#">
+        <div class="card small">
+          <div class="center-align">
+            <div class="container">
+              <img src="../images/bdatos/intel-core-i7-11700k.webp" alt="" class="square responsive-img" style="height: 50%;width: 50%;">
+            </div>
+            <div>
+              <p class="">Intel Core i7-11700K 3.6 GHz</p>
+              <p>$56.99</p>
+            </div>
+          </div>
+        </div>
+        </a>
+      </div>
+    -->
+    </div>
 
     <!--   Footer Seccion   -->
     <footer role=”contentinfo” arial-label="Información sobre la web y enlaces." class="page-footer blue darken-2">
@@ -594,22 +617,20 @@
       </div>
     </footer>
 
-
-
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-database.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-<!--JavaScript at end of body for optimized loading-->
-<script type="text/javascript" src="../js/catalogo.js"></script>
-<!-- Compiled and minified JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script type="module">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-database.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="../js/catalogo.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="module">
       // Import the functions you need from the SDKs you need
       import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js";
       import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-analytics.js";
       // TODO: Add SDKs for Firebase products that you want to use
       // https://firebase.google.com/docs/web/setup#available-libraries
-</script>
-</body>
+    </script>
+  </body>
 </html>

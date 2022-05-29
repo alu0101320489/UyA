@@ -9,6 +9,7 @@
       <link type="text/css" rel="stylesheet" href="../css/index-style.css"  media="screen,projection"/>
       <!--personal css-->
       <link type="text/css" rel="stylesheet" href="../css/producto.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../css/style.css"  media="screen,projection"/>
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
@@ -26,11 +27,25 @@
         </div>
       </nav>
 
+      <div id="breadcrumbs-wrapper" class="white" aria-label="Breadcrumbs">
+        <div class="container">
+          <div class="row">
+            <div class="col s12 m12 l12">
+              <ol class="breadcrumbs">
+                  <li><a href="../index.html">Inicio</a></li>
+                  <li><a href="../pages/Catalogo.html">Catálogo</a></li>
+                  <li><a href="../pages/Producto.html">Producto</a></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <main class="container">
  
         <!-- Left Column / Headphones Image -->
         <div class="left-column">
-            <img src="../images/bdatos/msi-optix-g24c4.webp" alt="" class="square responsive-img">
+            <img src="" alt="" class="square responsive-img">
         </div>
        
        
@@ -39,14 +54,14 @@
        
           <!-- Product Description -->
           <div class="product-description">
-            <span>Headphones</span>
-            <h1>Beats EP</h1>
-            <p>The preferred choice of a vast range of acclaimed DJs. Punchy, bass-focused sound and high isolation. Sturdy headband and on-ear cushions suitable for live performance</p>
+            <span></span>
+            <h1></h1>
+            <p></p>
           </div>
           
           <!-- Product Pricing -->
           <div class="product-price">
-            <span>148$</span>
+            <span></span>
             <a href="#" class="cart-btn">Add to cart</a>
           </div>
         </div>
@@ -72,11 +87,11 @@
             <h3 class="white-text">Social</h3>
             <ul role=”navigation” arial-label="Menú de informacion.">
               <li>
-                <a role= "button" arial-label="Enlace a facebook." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="./images/facebook.png" alt="Logo facebook" width="25" height="25"></img></a>
-                <a role= "button" arial-label="Enlace a linkedin." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="./images/linkedin.png" alt="Logo facebook" width="25" height="25"></img></a>
+                <a role= "button" arial-label="Enlace a facebook." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="../images/facebook.png" alt="Logo facebook" width="25" height="25"></img></a>
+                <a role= "button" arial-label="Enlace a linkedin." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="../images/linkedin.png" alt="Logo facebook" width="25" height="25"></img></a>
               </li>
-              <li><a role= "button" arial-label="Enlace a instagram." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="./images/instagram.png" alt="Logo instagram" width="25" height="25"></img></a>
-                  <a role= "button" arial-label="Enlace a twitter." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="./images/twitter.png" alt="Logo twitter" width="25" height="25"></img></a>
+              <li><a role= "button" arial-label="Enlace a instagram." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="../images/instagram.png" alt="Logo instagram" width="25" height="25"></img></a>
+                  <a role= "button" arial-label="Enlace a twitter." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="../images/twitter.png" alt="Logo twitter" width="25" height="25"></img></a>
               </li>
             </ul>
           </div>
@@ -97,5 +112,12 @@
     <script type="text/javascript" src="../js/producto.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    </script>
   </body>
 </html>

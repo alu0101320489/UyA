@@ -29,7 +29,7 @@ ref.on("value", function(snapshot) {
     $(function() {
       $.each(data, function(i, item) {
           var $div = $('<div class= "col s3" >').append(
-              $('<a href="#">').append(
+              $('<a id="'+item.IdProducto+'" class="producto" href="Producto.html">').append(
                 $('<div class="card small">').append(
                   $('<div class="center-align">').append(
                     $('<div class="container">').append(
@@ -43,6 +43,11 @@ ref.on("value", function(snapshot) {
                 )
               )
           );
+          $(document).on('click','#'+ item.IdProducto,function(){
+            //do something
+            var IdProducto = $(this).attr('id');
+            sessionStorage.setItem("IdProducto", IdProducto);
+          });
           $('#catalogo').append($div);
       });
     });
@@ -138,11 +143,20 @@ $(document).ready(function () {
      }
    });
 
+/*
+  $('#producto2').click(function() {
+    var IdProducto = "5";
+    sessionStorage.setItem("IdProducto", IdProducto);
+    //alert("error: ");
+  });
+*/
+
  });
 
-
- $('producto1').on('click', function () {
-  var favoritemovie = "Shrek";
-  sessionStorage.setItem("favoriteMovie", favoritemovie);
-  alert("error: ");
+/*
+ $('.producto').click(function() {
+  var IdProducto = $(this).find('a').attr('id');
+  sessionStorage.setItem("IdProducto", IdProducto);
+  //alert("error: ");
 });
+*/
