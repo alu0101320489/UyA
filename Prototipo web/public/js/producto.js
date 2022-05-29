@@ -48,7 +48,37 @@
 
 
 $(document).ready(function () {
-    var favoritemovie = sessionStorage.getItem("favoriteMovie");
+    //var favoritemovie = sessionStorage.getItem("favoriteMovie");
     //console.log(favoritemovie);
+
+    $('#comprar').click(function() {
+        //var jsarray = JSON.parse(sessionStorage.getItem("Carrito"));
+        var compra = {
+            "Descripcion": ""+$(".product-description p").text(),
+            "Etiqueta": ""+$(".product-description span").text(),
+            "IdProducto": "0",
+            "Imagen": ""+$(".left-column img").attr("src"),
+            "Nombre": ""+$(".product-description h1").text(),
+            "Precio": ""+$(".product-price span").text()
+        };
+        /*
+        if(jsarray != null){
+            jsarray["Carrito"].push(compra);
+            //jsarray = jsarray + "," + compra;
+        }else{
+            var jsarray = '{"Carrito":[]}';
+            //jsarray = compra;
+            jsarray["Carrito"].push(compra);
+        }
+        */
+        jsarray = compra;
+        sessionStorage.setItem("Carrito", JSON.stringify(jsarray));
+
+        //var IdProducto = "5";
+        //sessionStorage.setItem("IdProducto", IdProducto);
+        //alert("error: ");
+      });
+
+    
 
 });
