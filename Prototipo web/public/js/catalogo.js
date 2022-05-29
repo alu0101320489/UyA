@@ -137,5 +137,12 @@ $(document).ready(function () {
        alert("error: "+error);
      }
    });
+
  });
 
+
+ $('producto1').on('click', function () {
+  var favoritemovie = "Shrek";
+  sessionStorage.setItem("favoriteMovie", favoritemovie);
+  alert("error: ");
+});
