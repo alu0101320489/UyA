@@ -28,7 +28,7 @@ ref.on("value", function(snapshot) {
 
     $(function() {
       $.each(data, function(i, item) {
-          var $div = $('<div class= "col s3" >').append(
+          var $div = $('<div name="'+item.Nombre+'"class= "col s3">').append(
               $('<a id="'+item.IdProducto+'" class="producto" href="Producto.html">').append(
                 $('<div class="card small">').append(
                   $('<div class="center-align">').append(
@@ -78,6 +78,47 @@ ref.on("value", function(snapshot) {
    console.log("Error: " + error.code);
 });
 
+$("#Filtro").click(function () {
+  var BaseConfig= $.ajax({
+    url: 'https://tiendaelectronica-40245-default-rtdb.firebaseio.com/Catalogo.json',
+    type: "GET",
+    data: JSON.stringify(),
+    success: function (data) {
+
+   $(function() {
+     var prod = [];
+      let checkboxes = document.querySelectorAll('input[name="filtro"]:checked');
+      checkboxes.forEach((checkbox) => {
+      if(checkbox.value=="on") {
+        $.each(data, function(i, item) {
+          if(item.Etiqueta == checkbox.id) {
+            prod.push(item.IdProducto);
+          }
+        });
+      }
+      });
+      
+      var find = false;
+      $.each(data, function(i, item) {
+        $.each(prod, function(j, p) {
+          if(p == item.IdProducto) {
+            find = true;
+          }
+        })
+        console.log(find);
+        if (!find) {
+          document.getElementById(item.IdProducto).style.display = "none";
+          find = false;
+        }
+      });
+      
+   });
+    },
+    error: function(error) {
+      alert("error: "+error);
+    }
+  });
+});
 
 $( "#Formulario_Log_In" ).submit(function() {
 

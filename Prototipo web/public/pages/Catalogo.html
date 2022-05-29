@@ -372,18 +372,19 @@
         </form>
       </div>
 	  </div>
-
+    <!--
     <script>
       const btn = document.querySelector('#btn');
       btn.addEventListener('click', (event) => {
-          let checkboxes = document.querySelectorAll('input[name="filtro"]:checked');
-          let values = [];
-          checkboxes.forEach((checkbox) => {
-              values.push(checkbox.value);
-          });
-          alert(values);
+        let checkboxes = document.querySelectorAll('input[name="filtro"]:checked');
+        checkboxes.forEach((checkbox) => {
+          if(checkbox.value=="on") {
+            console.log(35);
+          }
+        });
       });
     </script>
+  -->
 
     <div id="catalogo" class="row">
       <!--
@@ -563,7 +564,7 @@
         </a>
       </div>
 
-      <div class= "col s3">
+      <div id ="453" class= "col s3">
         <a href="#">
         <div class="card small">
           <div class="center-align">
@@ -580,6 +581,7 @@
       </div>
     -->
     </div>
+    
 
     <!--   Footer Seccion   -->
     <footer role=”contentinfo” arial-label="Información sobre la web y enlaces." class="page-footer blue darken-2">
