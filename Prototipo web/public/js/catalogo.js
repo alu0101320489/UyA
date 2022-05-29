@@ -28,7 +28,7 @@ ref.on("value", function(snapshot) {
 
     $(function() {
       $.each(data, function(i, item) {
-          var $div = $('<div name="'+item.Nombre+'"class= "col s3">').append(
+          var $div = $('<div id="'+item.Nombre+'"class= "col s3">').append(
               $('<a id="'+item.IdProducto+'" class="producto" href="Producto.html">').append(
                 $('<div class="card small">').append(
                   $('<div class="center-align">').append(
@@ -88,28 +88,34 @@ $("#Filtro").click(function () {
    $(function() {
      var prod = [];
       let checkboxes = document.querySelectorAll('input[name="filtro"]:checked');
-      checkboxes.forEach((checkbox) => {
-      if(checkbox.value=="on") {
-        $.each(data, function(i, item) {
+      $.each(data, function(i, item) {
+        checkboxes.forEach((checkbox) => {
+          if(checkbox.value=="on") {
           if(item.Etiqueta == checkbox.id) {
             prod.push(item.IdProducto);
+            //console.log(checkbox.id);
           }
-        });
-      }
+        };
       });
-      
+      });
+      //console.log(prod);
       var find = false;
       $.each(data, function(i, item) {
         $.each(prod, function(j, p) {
           if(p == item.IdProducto) {
             find = true;
+            return false;
           }
-        })
+        });
+      
         console.log(find);
+        console.log(item.IdProducto);
         if (!find) {
-          document.getElementById(item.IdProducto).style.display = "none";
-          find = false;
+          document.getElementById(item.Nombre).style.display = "none";
+        } else {
+          document.getElementById(item.Nombre).style.display = "block";
         }
+        find = false;
       });
       
    });
