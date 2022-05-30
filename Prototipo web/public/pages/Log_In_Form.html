@@ -17,16 +17,16 @@
   </head>
 
   <body>
-    <nav id="Nav-bar" role="banner" arial-label="Cabecera">
+    <nav id="Nav-bar" role="banner" aria-label="Cabecera">
       <div class="nav-wrapper blue darken-2">
         <a href="#" class="brand-logo center">Electronica S.L.</a>
         <ul id="nav-mobile" class="left hide-on-med-and-down">
-          <li><a role= "button" arial-label="Vuelve a pagina de inicio." tabindex="0" href="../index.html">Inicio</a></li>
-          <li><a role= "button" arial-label="Ve a pagina de catálogo." tabindex="0" href="../pages/Catalogo.html">Catálogo</a></li>
-          <li><a role= "button" arial-label="Ve a pagina de contacto." tabindex="0" href="../pages/Contacto.html">Contacto</a></li>
-          <li><a role= "button" arial-label="Ve a pagina de inicio de sesión." tabindex="0" href="../pages/Log_In_Form.html">Inicio de Sesión</a></li>
+          <li><a role= "button" aria-label="Vuelve a pagina de inicio." tabindex="0" href="../index.html">Inicio</a></li>
+          <li><a role= "button" aria-label="Ve a pagina de catálogo." tabindex="0" href="../pages/Catalogo.html">Catálogo</a></li>
+          <li><a role= "button" aria-label="Ve a pagina de contacto." tabindex="0" href="../pages/Contacto.html">Contacto</a></li>
+          <li><a role= "button" aria-label="Ve a pagina de inicio de sesión." tabindex="0" href="../pages/Log_In_Form.html">Inicio de Sesión</a></li>
+          <li><a class="p-user" id="Usuarioensesion" role= "button" aria-label="Usuario" tabindex="0" href="#"></a></li>
         </ul>
-        <p id="Usuarioensesion"></p>
       </div>
     </nav>
 
@@ -47,30 +47,30 @@
       <div class="row">
         <form id="Formulario_Log_In" class="col s12 l6 offset-l3 white-text card hoverable">
           <div class="col s12 center">
-            <h1 class="text-center teal-text light "><small>Inicio de Sesión</small></h1>
+            <h1 class="text-center black-text"><small>Inicio de Sesión</small></h1>
           </div>
           <div class="divider"></div>
           <div class="input-field col s12">
-            <i class="material-icons prefix teal-text">email</i>
+            <i class="material-icons prefix blue-text darken-2">email</i>
             <input id="email" type="email" class="validate">
             <label for="email" data-error="wrong" data-success="right">Email</label>
           </div>
           <div class="input-field col s12">
-            <i class="material-icons prefix teal-text">person</i>
+            <i class="material-icons prefix blue-text darken-2">person</i>
             <input placeholder="Nombre" id="name" type="text" class="validate">
             <label for="name">Usuario</label>
           </div>
           <div class="input-field col s12">
-            <i class="material-icons prefix teal-text">password</i>
+            <i class="material-icons prefix blue-text darken-2">password</i>
             <input placeholder="*************" id="password" type="password" class="validate">
               <label for="password">Contraseña</label>
           </div>
           <div class="col s12">&nbsp;</div>
           <div class="col s12 center">
-            <button id="Registrar" class="btn" type="submit" name="Registrar">Registrar
+            <button id="Registrar" class="btn blue darken-2" type="submit" name="Registrar">Registrar
               <i class="material-icons right">send</i>
             </button>
-            <button id="IniciarSesion" class="btn" type="button" name="IniciarSesion">Iniciar Sesion
+            <button id="IniciarSesion" class="btn blue darken-2" type="button" name="IniciarSesion">Iniciar Sesion
               <i class="material-icons right">send</i>
             </button>
           </div>
@@ -82,7 +82,7 @@
     <div id="Tabla_Users"></div>
 
     <!--   Footer Seccion   -->
-    <footer role=”contentinfo” arial-label="Información sobre la web y enlaces." class="page-footer blue darken-2">
+    <footer role=”contentinfo” aria-label="Información sobre la web y enlaces." class="page-footer blue darken-2">
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
@@ -91,20 +91,20 @@
           </div>
           <div class="col l3 s12">
             <h3>Links</h3>
-            <ul role=”navigation” arial-label="Menú de informacion.">
-              <li><a role= "button" arial-label="Ve a pagina de contacto." tabindex="0" class="white-text" href="../pages/Log_In_Form.html">Contacto</a></li>
-              <li><a role= "button" arial-label="Ve a ayuda." tabindex="0" class="white-text" href="#!">Ayuda</a></li>
+            <ul role=”navigation” aria-label="Menú de informacion.">
+              <li><a role= "button" aria-label="Ve a pagina de contacto." tabindex="0" class="white-text" href="../pages/Log_In_Form.html">Contacto</a></li>
+              <li><a role= "button" aria-label="Ve a ayuda." tabindex="0" class="white-text" href="#!">Ayuda</a></li>
             </ul>
           </div>
           <div class="col l3 s12">
             <h3 class="white-text">Social</h3>
-            <ul role=”navigation” arial-label="Menú de informacion.">
+            <ul role=”navigation” aria-label="Menú de informacion.">
               <li>
-                <a role= "button" arial-label="Enlace a facebook." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="../images/facebook.png" alt="Logo facebook" width="25" height="25"></img></a>
-                <a role= "button" arial-label="Enlace a linkedin." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="../images/linkedin.png" alt="Logo facebook" width="25" height="25"></img></a>
+                <a role= "button" aria-label="Enlace a facebook." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="../images/facebook.png" alt="Logo facebook" width="25" height="25"></img></a>
+                <a role= "button" aria-label="Enlace a linkedin." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="../images/linkedin.png" alt="Logo facebook" width="25" height="25"></img></a>
               </li>
-              <li><a role= "button" arial-label="Enlace a instagram." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="../images/instagram.png" alt="Logo instagram" width="25" height="25"></img></a>
-                  <a role= "button" arial-label="Enlace a twitter." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="../images/twitter.png" alt="Logo twitter" width="25" height="25"></img></a>
+              <li><a role= "button" aria-label="Enlace a instagram." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="../images/instagram.png" alt="Logo instagram" width="25" height="25"></img></a>
+                  <a role= "button" aria-label="Enlace a twitter." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="../images/twitter.png" alt="Logo twitter" width="25" height="25"></img></a>
               </li>
             </ul>
           </div>

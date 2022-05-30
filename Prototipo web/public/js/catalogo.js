@@ -13,7 +13,6 @@
       appId: "1:289487752550:web:8ffb7368e5ec28e607cca7",
       measurementId: "G-2H1XZW47RP"
     };
-  
 
      // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
@@ -33,7 +32,7 @@ ref.on("value", function(snapshot) {
                 $('<div class="card small">').append(
                   $('<div class="center-align">').append(
                     $('<div class="container">').append(
-                      $('<img src="'+item.Imagen+'" alt="" class="square responsive-img" style="height: 50%;width: 50%;">').append()
+                      $('<img src="'+item.Imagen+'" alt="'+item.Nombre+'" class="square responsive-img" style="height: 50%;width: 50%;">').append()
                     ),
                     $('<div style="height: 20%;">').append(
                       $('<p>').text(item.Nombre),
@@ -51,29 +50,6 @@ ref.on("value", function(snapshot) {
           $('#catalogo').append($div);
       });
     });
-
-
-    /*
-    <div class= "col s3" >
-                <a href="#">
-                  <div class="card small">
-                    <div class="center-align">
-                      <div class="container">
-                          <img src="../images/bdatos/msi-optix-g24c4.webp" alt="" class="square responsive-img" style="height: 50%;width: 50%;">
-                      </div>
-                      <div style="height: 20%;">
-                        <p class="">MSI Optix G24C4 23.6 LED FullHD 144Hz Freesync Curva</p>
-                        <p>$56.99</p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-    */
-
-
-
-
 }, function (error) {
    console.log("Error: " + error.code);
 });
@@ -105,7 +81,6 @@ $("#Filtro").click(function () {
             return false;
           }
         });
-      
         console.log(find);
         console.log(item.IdProducto);
         if (!find) {
@@ -115,7 +90,6 @@ $("#Filtro").click(function () {
         }
         find = false;
       });
-      
    });
     },
     error: function(error) {
@@ -147,7 +121,6 @@ $( "#Formulario_Log_In" ).submit(function() {
             Contraseña: "" + $("#password").val(),
             Email: "" + $("#email").val()
         };
-    
         ref.once('value')
             .then(function(dataSnapshot) {
                 // handle read data.
@@ -156,13 +129,6 @@ $( "#Formulario_Log_In" ).submit(function() {
       } else {
           alert("Datos incorrectos");
       }
-
-
-
-
-
-
-
   });
 
 $(document).ready(function () {

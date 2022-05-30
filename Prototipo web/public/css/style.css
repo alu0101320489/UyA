@@ -16,9 +16,15 @@
 footer.page-footer {
   margin: 0;
 }
+
 .checkbox-blue[type="checkbox"].filled-in:checked+span:not(.lever):after {
   border: 2px solid #23c9db;
   background-color: #23c9db;
+}
+
+.p-user {
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 #breadcrumbs-wrapper {
@@ -70,4 +76,89 @@ h5.breadcrumbs-header {
   position: sticky;
   top: 0px;
   z-index: 1;
+}
+
+#card-index {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.circle {
+  max-height: 225px;
+}
+
+.err_page
+{
+	width:100%;
+  height:80%;
+	margin:4% auto;
+	background:#fff;
+	text-align:center;
+	display:flex;
+	align-items: center;
+}
+.err_page_right
+{
+	width:100%;
+}
+.err_page_left
+{
+		width:100%;
+}
+.err_page h1
+{
+	font-family: 'Noto Sans', sans-serif;
+	font-size:70pt;
+	margin:0;
+	color: black;
+}
+.err_page h4
+{	color: black;
+	font-size:14pt;
+}
+.err_page p
+{
+	font-size: 14pt;
+	color: #737373;
+}
+.err_btn
+{
+	background:#fff;
+	border:2px solid black;
+	padding:20px;
+	border-radius:5px;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	cursor:pointer;
+	font-size:13pt;
+	transition:background 0.5s;
+}
+.err_btn:hover
+{
+	background: #1976d2;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+	color:#fff;
+}
+
+.err_page_left img {
+  width: 360px;
+  height: 250px;
+}
+
+#tex_contacto {
+  font-size: 14pt;
+}
+
+#contacto1 > p, a {
+  font-size: 12pt;
+}
+
+#contacto2 > p, a {
+  font-size: 12pt;
+}
+
+@media (min-width: 601px) {
+  #card-index {
+    height: 400px;
+  }
 }

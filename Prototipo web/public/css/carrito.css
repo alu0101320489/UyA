@@ -24,6 +24,11 @@ input {
   text-align: center;
 }
 
+.product-price {
+  position: relative;
+  left: 85%;
+  bottom: 40px;
+}
 
 a {
   text-decoration: none;
@@ -67,7 +72,6 @@ a {
 .th {
   background: #f34d35;
   color: #fff;
-  text-transform: uppercase;
   font-weight: bold;
   font-size: 1.5em;
 }

@@ -31,7 +31,7 @@ $('.visibility-cart').on('click',function(){
       if (value > 1) {
         value = value - 1;
       } else {
-        value = 0;
+        value = 1;
       }
       
       $input.val(value);
