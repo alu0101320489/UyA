@@ -25,7 +25,8 @@ ref.on("value", function(snapshot) {
     let counter = 0;
     $.each(data, function(i, item) {
       var iamgen  = item.Imagen
-      var imagenmod = iamgen.replace("../public/", "")
+      var imagenmod = iamgen.replace("public/", "")
+      console.log(imagenmod);
       var $div = $('<div id="' + item.Nombre + '"class= "col s3">').append(
         $('<a id="' + item.IdProducto + '" class="producto" href="public/pages/Producto.html">').append(
           $('<div class="card small">').append(
@@ -59,7 +60,3 @@ ref.on("value", function(snapshot) {
 
 var elem = document.querySelector('.sidenav');
 var instance = new M.Sidenav(elem);
-
-$(document).ready(function () {
-  $('.sidenav').sidenav();
-});
