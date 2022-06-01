@@ -34,7 +34,7 @@ $('a.qty-minus').on('click', function(e) {
 
   $(".col-price p").text(item.Precio);
   var string = item.Precio
-  string = string.replace("$", "");
+  string = string.replace("€", "");
   $(".col-total p").text( string *  $(document).find('input').val() + 2.95);
 });
 
@@ -54,8 +54,8 @@ $('a.qty-plus').on('click', function(e) {
 
   $(".col-price p").text(item.Precio);
   var string = item.Precio
-  string = string.replace("$", "");
-  $(".col-total p").text( string *  $(document).find('input').val() + 2.95);
+  string = string.replace("€", "");
+  $(".col-total p").text( string *  $(document).find('input').val() + 2.95 + '€');
 });
 
 // RESTRICT INPUTS TO NUMBERS ONLY WITH A MIN OF 0 AND A MAX 100
@@ -72,11 +72,10 @@ $('input').on('blur', function(){
 
 $(document).ready(function () {
   item = JSON.parse(sessionStorage.getItem("Carrito"));
-  //console.log(jsarray);
   $(".col-pro img").attr("src", item.Imagen);
   $(".col-pro p").text(item.Nombre);
   $(".col-price p").text(item.Precio);
   var string = item.Precio
-  string = string.replace("$", "");
-  $(".col-total p").text( string *  $(document).find('input').val() + 2.95);
+  string = string.replace("€", "");
+  $(".col-total p").text( string * $(document).find('input').val() + 2.95 + '€');
 });

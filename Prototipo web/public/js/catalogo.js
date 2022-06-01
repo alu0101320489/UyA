@@ -32,7 +32,7 @@ ref.on("value", function(snapshot) {
               ),
               $('<div style="height: 20%;">').append(
                 $('<p>').text(item.Nombre),
-                $('<p>').text('$' + item.Precio)
+                $('<p>').text(item.Precio + '€')
               )
             )
           )

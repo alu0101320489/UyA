@@ -25,7 +25,7 @@ ref.on("value", function(snapshot) {
     $.each(data, function(i, item) {
       if(item.IdProducto == filterid){
         console.log(filterid);
-        $(".product-price span").text("$"+item.Precio)
+        $(".product-price span").text(item.Precio + '€')
         $(".product-description span").text(item.Etiqueta)
         $(".product-description h1").text(item.Nombre)
         $(".product-description p").text(item.Descripcion)
