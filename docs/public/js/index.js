@@ -25,7 +25,7 @@ ref.on("value", function(snapshot) {
     let counter = 0;
     $.each(data, function(i, item) {
       var iamgen  = item.Imagen
-      var imagenmod = iamgen.replace("../", "")
+      var imagenmod = iamgen.replace("../../", "")
       var $div = $('<div id="' + item.Nombre + '"class= "col s3">').append(
         $('<a id="' + item.IdProducto + '" class="producto" href="public/pages/Producto.html">').append(
           $('<div class="card small">').append(
