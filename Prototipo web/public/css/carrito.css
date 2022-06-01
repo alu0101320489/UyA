@@ -1,4 +1,3 @@
-
 .shopper {
   text-transform: lowercase;
   font: 2em 'Shopper', sans-serif;
@@ -6,15 +5,11 @@
   display: inline-block;
 }
 
-
-
 h1 {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 2.5em;
 }
-
-
 
 input {
   border: 0.3em solid #bbc3c6;
@@ -59,7 +54,6 @@ a {
   clear: both;
   margin-bottom: 1.8em;
 }
-
 
 .layout-inline > * {
   display: inline-block;
@@ -146,14 +140,14 @@ a {
 }
 
 .col-pro img{
- width: 30%;
- height: 30%;
+  width: 30%;
+  height: 30%;
 }
 
 .col-pro p{
-    width: 50%;
-    height: 30%;
-   }
+  width: 50%;
+  height: 30%;
+}
 
 a.qty {
   width: 1em;
@@ -198,15 +192,15 @@ a.qty:hover {
   .container {
     width: 98%;
   }
-  
+
   .col-pro {
     width: 35%;
   }
-  
+
   .col-qty {
     width: 22%;
   }
-  
+
   img {
     max-width: 100%;
     margin-bottom: 1em;
@@ -214,5 +208,5 @@ a.qty:hover {
 }
 
 @media screen and ( max-width: 591px) {
-  
+
 }

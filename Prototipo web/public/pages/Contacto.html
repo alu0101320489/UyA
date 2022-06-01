@@ -2,15 +2,12 @@
 <html lang="es">
   <head>
     <title>Contacto</title>
-
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-
     <!--Let browser know website is optimized for mobile-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -35,8 +32,8 @@
         <div class="row">
           <div class="col s12 m12 l12">
             <ol class="breadcrumbs">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="Contacto.html">Contacto</a></li>
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="Contacto.html">Contacto</a></li>
             </ol>
           </div>
         </div>
@@ -90,8 +87,9 @@
                 <a role= "button" aria-label="Enlace a facebook." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="../images/facebook.png" alt="Logo facebook" width="25" height="25"></img></a>
                 <a role= "button" aria-label="Enlace a linkedin." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="../images/linkedin.png" alt="Logo facebook" width="25" height="25"></img></a>
               </li>
-              <li><a role= "button" aria-label="Enlace a instagram." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="../images/instagram.png" alt="Logo instagram" width="25" height="25"></img></a>
-                  <a role= "button" aria-label="Enlace a twitter." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="../images/twitter.png" alt="Logo twitter" width="25" height="25"></img></a>
+              <li>
+                <a role= "button" aria-label="Enlace a instagram." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="../images/instagram.png" alt="Logo instagram" width="25" height="25"></img></a>
+                <a role= "button" aria-label="Enlace a twitter." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="../images/twitter.png" alt="Logo twitter" width="25" height="25"></img></a>
               </li>
             </ul>
           </div>
@@ -103,6 +101,17 @@
         </div>
       </div>
     </footer>
+
+    <!--  Scripts-->
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-database.js"></script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-analytics.js";
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script type="text/javascript" src="../js/sesion.js"></script>
   </body>
 </html>

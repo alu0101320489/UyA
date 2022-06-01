@@ -3,9 +3,6 @@
 const firebaseConfig = {
   apiKey: "AIzaSyAVlso3BWHWKjmtzq0ANnM4NqCYSvum9iM",
   authDomain: "electronicasl-e1ebc.firebaseapp.com",
-  //databaseURL: "https://electronicasl-e1ebc-default-rtdb.europe-west1.firebasedatabase.app",
-  //databaseURL: "https://prueba-firebase-12174-default-rtdb.firebaseio.com",
-  //databaseURL: "https://proquenofunciona-default-rtdb.firebaseio.com/",
   databaseURL: "https://tiendaelectronica-40245-default-rtdb.firebaseio.com",
   projectId: "electronicasl-e1ebc",
   storageBucket: "electronicasl-e1ebc.appspot.com",
@@ -19,7 +16,6 @@ firebase.initializeApp(firebaseConfig);
 //Referencia a la base de datos
 var ref = firebase.database().ref("Catalogo");
 
-//NO BORRAR QUE SE MUERE MUY FUERTE EL CODIGO; NI IDEA DE PORQUE
 ref.on("value", function(snapshot) {
   console.log("Exito");
   var data = snapshot.val();
@@ -45,7 +41,7 @@ ref.on("value", function(snapshot) {
           )
         )
       );
-      $(document).on('click','#' + item.IdProducto,function(){
+      $(document).on('click','#' + item.IdProducto,function() {
         var IdProducto = $(this).attr('id');
         sessionStorage.setItem("IdProducto", IdProducto);
       });
@@ -58,12 +54,12 @@ ref.on("value", function(snapshot) {
     });
   });
 }, function (error) {
-   console.log("Error: " + error.code);
+  console.log("Error: " + error.code);
 });
 
 var elem = document.querySelector('.sidenav');
 var instance = new M.Sidenav(elem);
 
 $(document).ready(function () {
-  //$('.sidenav').sidenav();
+  $('.sidenav').sidenav();
 });

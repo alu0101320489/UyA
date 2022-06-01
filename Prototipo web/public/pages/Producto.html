@@ -1,70 +1,63 @@
 <!DOCTYPE html>
-  <html lang="es">
-    <head>
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-      <link type="text/css" rel="stylesheet" href="../css/index-style.css"  media="screen,projection"/>
-      <!--personal css-->
-      <link type="text/css" rel="stylesheet" href="../css/producto.css"  media="screen,projection"/>
-      <link type="text/css" rel="stylesheet" href="../css/style.css"  media="screen,projection"/>
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
+<html lang="es">
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link type="text/css" rel="stylesheet" href="../css/index-style.css"  media="screen,projection"/>
+    <!--personal css-->
+    <link type="text/css" rel="stylesheet" href="../css/producto.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="../css/style.css"  media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
 
-    <body>
-      <nav id="Nav-bar" role="banner" aria-label="Cabecera">
-        <div class="nav-wrapper blue darken-2">
-          <a href="#" class="brand-logo center">Electronica S.L.</a>
-          <ul id="nav-mobile" class="left hide-on-med-and-down">
-            <li><a role= "button" aria-label="Vuelve a pagina de inicio." tabindex="0" href="../index.html">Inicio</a></li>
-            <li><a role= "button" aria-label="Ve a pagina de catálogo." tabindex="0" href="../pages/Catalogo.html">Catálogo</a></li>
-            <li><a role= "button" aria-label="Ve a pagina de contacto." tabindex="0" href="../pages/Contacto.html">Contacto</a></li>
-            <li><a role= "button" aria-label="Ve a pagina de inicio de sesión." tabindex="0" href="../pages/Log_In_Form.html">Inicio de Sesión</a></li>
-            <li><a class="p-user" id="Usuarioensesion" role= "button" aria-label="Usuario" tabindex="0" href="#"></a></li>
-          </ul>
-        </div>
-      </nav>
+  <body>
+    <nav id="Nav-bar" role="banner" aria-label="Cabecera">
+      <div class="nav-wrapper blue darken-2">
+        <a href="#" class="brand-logo center">Electronica S.L.</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <li><a role= "button" aria-label="Vuelve a pagina de inicio." tabindex="0" href="../index.html">Inicio</a></li>
+          <li><a role= "button" aria-label="Ve a pagina de catálogo." tabindex="0" href="../pages/Catalogo.html">Catálogo</a></li>
+          <li><a role= "button" aria-label="Ve a pagina de contacto." tabindex="0" href="../pages/Contacto.html">Contacto</a></li>
+          <li><a role= "button" aria-label="Ve a pagina de inicio de sesión." tabindex="0" href="../pages/Log_In_Form.html">Inicio de Sesión</a></li>
+          <li><a class="p-user" id="Usuarioensesion" role= "button" aria-label="Usuario" tabindex="0" href="#"></a></li>
+        </ul>
+      </div>
+    </nav>
 
-      <div id="breadcrumbs-wrapper" class="white" aria-label="Breadcrumbs">
-        <div class="container">
-          <div class="row">
-            <div class="col s12 m12 l12">
-              <ol class="breadcrumbs">
-                  <li><a href="../index.html">Inicio</a></li>
-                  <li><a href="../pages/Catalogo.html">Catálogo</a></li>
-                  <li><a href="../pages/Producto.html">Producto</a></li>
-              </ol>
-            </div>
+    <div id="breadcrumbs-wrapper" class="white" aria-label="Breadcrumbs">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m12 l12">
+            <ol class="breadcrumbs">
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="../pages/Catalogo.html">Catálogo</a></li>
+              <li><a href="../pages/Producto.html">Producto</a></li>
+            </ol>
           </div>
         </div>
       </div>
+    </div>
 
-      <main class="container">
-        <!-- Left Column / Headphones Image -->
-        <div class="left-column">
-            <img src="" alt="" class="square responsive-img">
+    <main class="container">
+      <div class="left-column">
+          <img src="" alt="" class="square responsive-img">
+      </div>
+      <div class="right-column">
+        <div class="product-description">
+          <span></span>
+          <h1></h1>
+          <p></p>
         </div>
-
-        <!-- Right Column -->
-        <div class="right-column">
-          <!-- Product Description -->
-          <div class="product-description">
-            <span></span>
-            <h1></h1>
-            <p></p>
-          </div>
-
-          <!-- Product Pricing -->
-          <div class="product-price">
-            <span></span>
-            <a id="comprar" href="Carrito.html" class="cart-btn">Añadir al carrito</a>
-          </div>
+        <div class="product-price">
+          <span></span>
+          <a id="comprar" href="Carrito.html" class="cart-btn">Añadir al carrito</a>
         </div>
-      </main>
-
+      </div>
+    </main>
 
     <!--   Footer Seccion   -->
     <footer role=”contentinfo” aria-label="Información sobre la web y enlaces." class="page-footer blue darken-2">
@@ -88,8 +81,9 @@
                 <a role= "button" aria-label="Enlace a facebook." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="../images/facebook.png" alt="Logo facebook" width="25" height="25"></img></a>
                 <a role= "button" aria-label="Enlace a linkedin." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="../images/linkedin.png" alt="Logo facebook" width="25" height="25"></img></a>
               </li>
-              <li><a role= "button" aria-label="Enlace a instagram." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="../images/instagram.png" alt="Logo instagram" width="25" height="25"></img></a>
-                  <a role= "button" aria-label="Enlace a twitter." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="../images/twitter.png" alt="Logo twitter" width="25" height="25"></img></a>
+              <li>
+                <a role= "button" aria-label="Enlace a instagram." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="../images/instagram.png" alt="Logo instagram" width="25" height="25"></img></a>
+                <a role= "button" aria-label="Enlace a twitter." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="../images/twitter.png" alt="Logo twitter" width="25" height="25"></img></a>
               </li>
             </ul>
           </div>
@@ -102,21 +96,17 @@
       </div>
     </footer>
 
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!--  Scripts-->
     <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-database.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script type="text/javascript" src="../js/sesion.js"></script>
-    <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="../js/producto.js"></script>
-    <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script type="module">
       // Import the functions you need from the SDKs you need
       import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js";
       import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-analytics.js";
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries
     </script>
   </body>
 </html>
