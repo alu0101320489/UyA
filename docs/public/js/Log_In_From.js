@@ -82,3 +82,6 @@ document.getElementById('IniciarSesion').onclick = function() {
     });
   });
 }
+
+var elem = document.querySelector('.sidenav');
+var instance = new M.Sidenav(elem);

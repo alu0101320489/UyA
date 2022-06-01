@@ -79,3 +79,6 @@ $(document).ready(function () {
   string = string.replace("€", "");
   $(".col-total p").text( string * $(document).find('input').val() + 2.95 + '€');
 });
+
+var elem = document.querySelector('.sidenav');
+var instance = new M.Sidenav(elem);

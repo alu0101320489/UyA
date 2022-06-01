@@ -52,3 +52,6 @@ $(document).ready(function () {
     sessionStorage.setItem("Carrito", JSON.stringify(jsarray));
   });
 });
+
+var elem = document.querySelector('.sidenav');
+var instance = new M.Sidenav(elem);
