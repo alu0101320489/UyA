@@ -17,9 +17,7 @@ firebase.initializeApp(firebaseConfig);
 var ref = firebase.database().ref("Catalogo");
 
 ref.on("value", function(snapshot) {
-  console.log("Exito");
   var data = snapshot.val();
-  console.log(data[3]);
 
   $(function() {
     $.each(data, function(i, item) {
@@ -28,9 +26,9 @@ ref.on("value", function(snapshot) {
           $('<div class="card small">').append(
             $('<div class="center-align">').append(
               $('<div class="container">').append(
-                $('<img src="' + item.Imagen + '" alt="' + item.Nombre + '" class="square responsive-img" style="height: 50%;width: 50%;">').append()
+                $('<img src="' + item.Imagen + '" alt="' + item.Nombre + '" class="square responsive-img img_catalogo">').append()
               ),
-              $('<div style="height: 20%;">').append(
+              $('<div class="texto_catalogo">').append(
                 $('<p>').text(item.Nombre),
                 $('<p>').text(item.Precio + '€')
               )
@@ -91,59 +89,3 @@ $("#Filtro").click(function () {
     }
   });
 });
-
-$( "#Formulario_Log_In" ).submit(function() {
-  function validacionTexto()  {
-    var valor = $("#name").val();
-    if( valor == null || valor.length == 0 || !/^[A-Z]+$/i.test(valor) ) {
-      alert('ERROR: El nombre solo puede contener letras.');
-      return false;
-    }
-    var valor = $("#password").val();
-    if( valor == null || valor.length < 4  ) {
-      alert('ERROR: Contraseña muy corta');
-      return false;
-    }
-    return true;
-  }
-  var validate_text = validacionTexto();
-  if (validate_text == true) {
-    var obj = {
-      Nombre: "" + $("#name").val(),
-      Contraseña: "" + $("#password").val(),
-      Email: "" + $("#email").val()
-    };
-    ref.once('value').then(function(dataSnapshot) {
-      // handle read data.
-      ref.child(dataSnapshot.numChildren()).set(obj);
-    });
-  } else {
-    alert("Datos incorrectos");
-  }
-});
-
-$(document).ready(function () {
-  var BaseConfig= $.ajax({
-    url: 'https://electronicasl-e1ebc-default-rtdb.europe-west1.firebasedatabase.app/Catalogo/1.json',
-    type: "GET",
-    data: JSON.stringify(),
-    success: function (data) {
-      $(function() {
-        $.each(data, function(i, item) {
-          var $tr = $('<tr>').append(
-            $('<td>').text(item.Nombre),
-            $('<td>').text(item.Contraseña),
-            $('<td>').text(item.Email)
-          );
-          $('#Tabla_Users').append($tr);
-        });
-      });
-    },
-    error: function(error) {
-      alert("error: "+error);
-    }
-  });
-});
-
-var elem = document.querySelector('.sidenav');
-var instance = new M.Sidenav(elem);

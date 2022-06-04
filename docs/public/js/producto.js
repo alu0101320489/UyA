@@ -17,14 +17,12 @@ firebase.initializeApp(firebaseConfig);
 var ref = firebase.database().ref("Catalogo");
 
 ref.on("value", function(snapshot) {
-  console.log("Exito");
   var filterid = sessionStorage.getItem("IdProducto");
   var data = snapshot.val();
 
   $(function() {
     $.each(data, function(i, item) {
       if(item.IdProducto == filterid){
-        console.log(filterid);
         $(".product-price span").text(item.Precio + '€')
         $(".product-description span").text(item.Etiqueta)
         $(".product-description h1").text(item.Nombre)
@@ -52,6 +50,3 @@ $(document).ready(function () {
     sessionStorage.setItem("Carrito", JSON.stringify(jsarray));
   });
 });
-
-var elem = document.querySelector('.sidenav');
-var instance = new M.Sidenav(elem);

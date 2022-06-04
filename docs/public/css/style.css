@@ -76,7 +76,7 @@ h5.breadcrumbs-header {
 #Nav-bar {
   position: sticky;
   top: 0px;
-  z-index: 1;
+  z-index: 5;
 }
 
 #card-index {
@@ -145,6 +145,14 @@ h5.breadcrumbs-header {
   height: 250px;
 }
 
+.img_catalogo {
+  height: 50%;
+  width: 50%;
+}
+.texto_catalogo{
+  height: 20%;
+}
+
 #tex_contacto {
   font-size: 14pt;
 }
@@ -157,8 +165,14 @@ h5.breadcrumbs-header {
   font-size: 12pt;
 }
 
+#Filtro label{
+  float: left;
+  margin-right: 5%;
+}
+
 @media (min-width: 601px) {
   #card-index {
     height: 400px;
   }
+
 }

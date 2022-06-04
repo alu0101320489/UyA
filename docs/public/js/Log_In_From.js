@@ -17,7 +17,6 @@ firebase.initializeApp(firebaseConfig);
 var ref = firebase.database().ref("Usuarios");
 
 ref.on("value", function(snapshot) {
-  console.log("Exito");
 }, function (error) {
   console.log("Error: " + error.code);
 });
@@ -82,6 +81,3 @@ document.getElementById('IniciarSesion').onclick = function() {
     });
   });
 }
-
-var elem = document.querySelector('.sidenav');
-var instance = new M.Sidenav(elem);

@@ -20,7 +20,8 @@ input {
 }
 
 .product-price {
-  position: relative;
+  /*position: relative;*/
+  float: left;
   left: 85%;
   bottom: 40px;
 }
@@ -166,13 +167,13 @@ a.qty:hover {
 }
 
 .btn {
-  padding: 10px 30px;
+  /*padding: 10px 30px;*/
   border-radius: 0.3em;
-  font-size: 1.4em;
+  /*font-size: 1.4em;*/
   font-weight: bold;
   background: #43ace3;
   color: #fff;
-  box-shadow: 0 3px 0 rgba(59,154,198, 1)
+  /*box-shadow: 0 3px 0 rgba(59,154,198, 1)*/
 }
 
 .btn:hover {
@@ -205,8 +206,14 @@ a.qty:hover {
     max-width: 100%;
     margin-bottom: 1em;
   }
+  .col-numeric {
+    font-size-adjust: calc(4vw + 4vh + 2vmin);
+  }
+
 }
 
-@media screen and ( max-width: 591px) {
-
+@media screen and ( max-width: 1350px) {
+  .col-qty > input {
+    float: left;
+  }
 }

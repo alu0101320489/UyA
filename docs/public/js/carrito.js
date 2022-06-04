@@ -1,22 +1,3 @@
-$('.visibility-cart').on('click',function(){
-  var $btn =  $(this);
-  var $cart = $('.cart');
-  console.log($btn);
-  if ($btn.hasClass('is-open')) {
-    $btn.removeClass('is-open');
-    $btn.text('O')
-    $cart.removeClass('is-open');
-    $cart.addClass('is-closed');
-    $btn.addClass('is-closed');
-  } else {
-    $btn.addClass('is-open');
-    $btn.text('X')
-    $cart.addClass('is-open')
-    $cart.removeClass('is-closed');
-    $btn.removeClass('is-closed');
-  }
-});
-
 // SHOPPING CART PLUS OR MINUS
 $('a.qty-minus').on('click', function(e) {
   e.preventDefault();
@@ -79,6 +60,3 @@ $(document).ready(function () {
   string = string.replace("€", "");
   $(".col-total p").text( string * $(document).find('input').val() + 2.95 + '€');
 });
-
-var elem = document.querySelector('.sidenav');
-var instance = new M.Sidenav(elem);

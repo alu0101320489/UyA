@@ -17,9 +17,7 @@ firebase.initializeApp(firebaseConfig);
 var ref = firebase.database().ref("Catalogo");
 
 ref.on("value", function(snapshot) {
-  console.log("Exito");
   var data = snapshot.val();
-  console.log(data[3]);
 
   $(function() {
     let counter = 0;
@@ -56,6 +54,3 @@ ref.on("value", function(snapshot) {
 }, function (error) {
   console.log("Error: " + error.code);
 });
-
-var elem = document.querySelector('.sidenav');
-var instance = new M.Sidenav(elem);
