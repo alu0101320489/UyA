@@ -198,4 +198,7 @@ h5.breadcrumbs-header {
   div.center-align h2{
     font-size: 7vw;
   }
+  div.texto_catalogo p{
+    word-break: break-all;
+  }
 }

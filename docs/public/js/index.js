@@ -29,9 +29,9 @@ ref.on("value", function(snapshot) {
           $('<div class="card small">').append(
             $('<div class="center-align">').append(
               $('<div class="container">').append(
-                $('<img src="' + imagenmod + '" alt="' + item.Nombre + '" class="square responsive-img" style="height: 50%;width: 50%;">').append()
+                $('<img src="' + imagenmod + '" alt="' + item.Nombre + '" class="square responsive-img img_catalogo">').append()
               ),
-              $('<div style="height: 20%;">').append(
+              $('<div class="texto_catalogo">').append(
                 $('<p>').text(item.Nombre),
                 $('<p>').text(item.Precio + '€')
               )
