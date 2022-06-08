@@ -153,6 +153,19 @@ h5.breadcrumbs-header {
   height: 20%;
 }
 
+.filtro_busqueda_titulo {
+  margin-left: 3%; 
+  font-size:160%;
+}
+
+.filtor_busqueda_caja{
+  margin-left: 3%;
+}
+
+.filtro_busqueda_nombre{
+  width: 10%;
+}
+
 #tex_contacto {
   font-size: 14pt;
 }
@@ -175,4 +188,14 @@ h5.breadcrumbs-header {
     height: 400px;
   }
 
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  * {
+    font-size: 3vw;
+  }
+  div.center-align h2{
+    font-size: 7vw;
+  }
 }

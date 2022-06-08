@@ -217,3 +217,10 @@ a.qty:hover {
     float: left;
   }
 }
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .col-numeric p{
+    font-size: 3vw;
+  }
+}

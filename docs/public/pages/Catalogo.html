@@ -16,7 +16,7 @@
   <body>
     <nav id="Nav-bar" role="banner" aria-label="Cabecera">
       <div class="nav-wrapper blue darken-2">
-        <a href="#" class="brand-logo center">Electronica S.L.</a>
+        <a href="#" class="brand-logo center">Electronica</a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul id="nav-mobile" class="left hide-on-med-and-down">
           <li><a role= "button" aria-label="Vuelve a pagina de inicio." tabindex="0" href="../../index.html">Inicio</a></li>
@@ -55,28 +55,28 @@
 
     <!-- Componentes -->
     <div id="filtrado" class="row">
-      <p style="margin-left: 3%; font-size:160%;">Filtros de búsqueda</p>
-      <div class="col s12" style="margin-left: 3%;">
-        <form id="Filtro">
-          <label>
+      <p class="filtro_busqueda_titulo">Filtros de búsqueda</p>
+      <div class="col s12 filtor_busqueda_caja">
+        <form id="Filtro" method="get">
+          <label for="Componente">
             <input id="Componente" name="filtro" type="checkbox" class="filled-in checkbox-blue" checked="checked"/>
-            <span style="width: 10%;">Componentes</span>
+            <span class="filtro_busqueda_nombre">Componentes</span>
           </label>
-          <label>
+          <label for="Monitor">
             <input id="Monitor" name="filtro" type="checkbox" class="filled-in checkbox-blue" checked="checked"/>
-            <span style="width: 10%;">Monitores</span>
+            <span class="filtro_busqueda_nombre">Monitores</span>
           </label>
-          <label>
+          <label for="Sobremesa">
             <input id="Sobremesa" name="filtro" type="checkbox" class="filled-in checkbox-blue" checked="checked"/>
-            <span style="width: 10%;">Sobremesas</span>
+            <span class="filtro_busqueda_nombre">Sobremesas</span>
           </label>
-          <label>
+          <label for="Portatil">
             <input id="Portatil" name="filtro" type="checkbox" class="filled-in checkbox-blue" checked="checked"/>
-            <span style="width: 10%;">Portátiles</span>
+            <span class="filtro_busqueda_nombre">Portátiles</span>
           </label>
-          <label>
+          <label for="Periferico">
             <input id="Periferico" name="filtro" type="checkbox" class="filled-in checkbox-blue" checked="checked"/>
-            <span style="width: 10%;">Periféricos</span>
+            <span class="filtro_busqueda_nombre">Periféricos</span>
           </label>
         </form>
       </div>
