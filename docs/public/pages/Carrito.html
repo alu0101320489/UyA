@@ -30,7 +30,7 @@
         </div>
       </nav>
 
-      <ul class="sidenav" id="mobile-demo">
+      <ul aria-hidden="true" class="sidenav" id="mobile-demo">
         <li><a role= "button" aria-label="Vuelve a pagina de inicio." tabindex="0" href="../../index.html">Inicio</a></li>
         <li><a role= "button" aria-label="Ve a pagina de catálogo." tabindex="0" href="../pages/Catalogo.html">Catálogo</a></li>
         <li><a role= "button" aria-label="Ve a pagina de contacto." tabindex="0" href="../pages/Contacto.html">Contacto</a></li>
@@ -79,9 +79,9 @@
               </div>
               <label for="CantidadProducto"></label>
               <div class="col col-qty layout-inline">
-                <a href="#" class="qty qty-minus">-</a>
-                  <input id="CantidadProducto" name="Cantidad de Producto" type="numeric" value="1" />
-                <a href="#" class="qty qty-plus">+</a>
+                <a aria-label="menos" href="#" class="qty qty-minus">-</a>
+                <input aria-label="cantidad de producto" id="CantidadProducto" name="Cantidad de Producto" type="numeric" value="1" />
+                <a aria-label="mas" href="#" class="qty qty-plus">+</a>
               </div>
 
               <div class="col col-vat col-numeric">
