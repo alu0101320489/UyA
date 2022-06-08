@@ -5,9 +5,9 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="public/css/materialize.min.css"  media="screen,projection"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="public/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <!--Let browser know website is optimized for mobile-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -19,20 +19,20 @@
         <a href="#" class="brand-logo center">Electronica</a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul id="nav-mobile" class="left hide-on-med-and-down">
-          <li><a role= "button" aria-label="Vuelve a pagina de inicio." tabindex="0" href="../index.html">Inicio</a></li>
-          <li><a role= "button" aria-label="Ve a pagina de catálogo." tabindex="0" href="pages/Catalogo.html">Catálogo</a></li>
-          <li><a role= "button" aria-label="Ve a pagina de contacto." tabindex="0" href="pages/Contacto.html">Contacto</a></li>
-          <li><a role= "button" aria-label="Ve a pagina de inicio de sesión." tabindex="0" href="pages/Log_In_Form.html">Inicio de Sesión</a></li>
+          <li><a role= "button" aria-label="Vuelve a pagina de inicio." tabindex="0" href="index.html">Inicio</a></li>
+          <li><a role= "button" aria-label="Ve a pagina de catálogo." tabindex="0" href="public/pages/Catalogo.html">Catálogo</a></li>
+          <li><a role= "button" aria-label="Ve a pagina de contacto." tabindex="0" href="public/pages/Contacto.html">Contacto</a></li>
+          <li><a role= "button" aria-label="Ve a pagina de inicio de sesión." tabindex="0" href="public/pages/Log_In_Form.html">Inicio de Sesión</a></li>
           <li><a class="p-user" id="Usuarioensesion" role= "button" aria-label="Usuario" tabindex="0" href="#">&nbsp</a></li>
         </ul>
       </div>
     </nav>
 
     <ul class="sidenav" id="mobile-demo">
-      <li><a role= "button" aria-label="Vuelve a pagina de inicio." tabindex="0" href="../index.html">Inicio</a></li>
-      <li><a role= "button" aria-label="Ve a pagina de catálogo." tabindex="0" href="pages/Catalogo.html">Catálogo</a></li>
-      <li><a role= "button" aria-label="Ve a pagina de contacto." tabindex="0" href="pages/Contacto.html">Contacto</a></li>
-      <li><a role= "button" aria-label="Ve a pagina de inicio de sesión." tabindex="0" href="pages/Log_In_Form.html">Inicio de Sesión</a></li>
+      <li><a role= "button" aria-label="Vuelve a pagina de inicio." tabindex="0" href="index.html">Inicio</a></li>
+      <li><a role= "button" aria-label="Ve a pagina de catálogo." tabindex="0" href="public/pages/Catalogo.html">Catálogo</a></li>
+      <li><a role= "button" aria-label="Ve a pagina de contacto." tabindex="0" href="public/pages/Contacto.html">Contacto</a></li>
+      <li><a role= "button" aria-label="Ve a pagina de inicio de sesión." tabindex="0" href="public/pages/Log_In_Form.html">Inicio de Sesión</a></li>
       <li><a class="p-user" id="Usuarioensesionsidenav" role= "button" aria-label="Usuario" tabindex="0" href="#">&nbsp</a></li>
     </ul>
 
@@ -41,7 +41,7 @@
         <div class="row">
           <div class="col s12 m12 l12">
             <ol class="breadcrumbs">
-              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="index.html">Inicio</a></li>
               <li><a href="404.html">404</a></li>
             </ol>
           </div>
@@ -53,13 +53,13 @@
       <div role= "main" class="section no-pad-bot">
         <div class="err_page">
           <div class="err_page_left">
-            <img src="images/404.png" alt="error404"/>
+            <img src="public/images/404.png" alt="error404"/>
           </div>
           <div class="err_page_right">
             <h1>404</h1>
             <h4>UPS. Parece que la página que estás buscando ya no existe</h4>
             <p>No te preocupes. Como usted es valioso para nosotros, lo traeremos de vuelta a un lugar seguro.</p>
-            <button class="err_btn" onclick="window.location.href='../index.html'">Vuelve al inicio</button>
+            <button class="err_btn" onclick="window.location.href='index.html'">Vuelve al inicio</button>
           </div>
         </div>
       </div>
@@ -76,20 +76,20 @@
           <div class="col l3 s12">
             <h3>Links</h3>
             <ul role=”navigation” aria-label="Menú de informacion.">
-              <li><a role= "button" aria-label="Ve a pagina de contacto." tabindex="0" class="white-text" href="pages/Contacto.html">Contacto</a></li>
-              <li><a role= "button" aria-label="Ve a ayuda." tabindex="0" class="white-text" href="pages/Log_In_Form.html">Inicio de Sesión</a></li>
+              <li><a role= "button" aria-label="Ve a pagina de contacto." tabindex="0" class="white-text" href="public/pages/Contacto.html">Contacto</a></li>
+              <li><a role= "button" aria-label="Ve a ayuda." tabindex="0" class="white-text" href="public/pages/Log_In_Form.html">Inicio de Sesión</a></li>
             </ul>
           </div>
           <div class="col l3 s12">
             <h3 class="white-text">Social</h3>
             <ul role=”navigation” aria-label="Menú de informacion.">
               <li>
-                <a role= "button" aria-label="Enlace a facebook." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="images/facebook.png" alt="Logo facebook" width="25" height="25"></img></a>
-                <a role= "button" aria-label="Enlace a linkedin." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="images/linkedin.png" alt="Logo linkedin" width="25" height="25"></img></a>
+                <a role= "button" aria-label="Enlace a facebook." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="public/images/facebook.png" alt="Logo facebook" width="25" height="25"></img></a>
+                <a role= "button" aria-label="Enlace a linkedin." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="public/images/linkedin.png" alt="Logo linkedin" width="25" height="25"></img></a>
               </li>
               <li>
-                <a role= "button" aria-label="Enlace a instagram." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="images/instagram.png" alt="Logo instagram" width="25" height="25"></img></a>
-                <a role= "button" aria-label="Enlace a twitter." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="images/twitter.png" alt="Logo twitter" width="25" height="25"></img></a>
+                <a role= "button" aria-label="Enlace a instagram." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="public/images/instagram.png" alt="Logo instagram" width="25" height="25"></img></a>
+                <a role= "button" aria-label="Enlace a twitter." tabindex="0" class="white-text" href="#!"><img class="responsive-img" src="public/images/twitter.png" alt="Logo twitter" width="25" height="25"></img></a>
               </li>
             </ul>
           </div>
@@ -112,6 +112,6 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script type="text/javascript" src="js/sesion.js"></script>
+    <script type="text/javascript" src="public/js/sesion.js"></script>
   </body>
 </html>

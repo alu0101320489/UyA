@@ -151,6 +151,7 @@ h5.breadcrumbs-header {
 }
 .texto_catalogo{
   height: 20%;
+  color:#1976d2;
 }
 
 .filtro_busqueda_titulo {
@@ -164,6 +165,15 @@ h5.breadcrumbs-header {
 
 .filtro_busqueda_nombre{
   width: 10%;
+  color:#1976d2;
+}
+
+.breadcrumbs a{
+  color:#1976d2;
+}
+
+.enlace_contacto {
+  color:#1976d2;
 }
 
 #tex_contacto {
