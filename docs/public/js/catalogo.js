@@ -73,8 +73,6 @@ $("#Filtro").click(function () {
               return false;
             }
           });
-          console.log(find);
-          console.log(item.IdProducto);
           if (!find) {
             document.getElementById(item.Nombre).style.display = "none";
           } else {
